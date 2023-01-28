@@ -43,7 +43,7 @@
 .logo-lux-room {
     font-family: 'FilmP3';
     font-size: 40px;
-    line-height: calc(43 / 40);
+    line-height: calc(43/40);
     letter-spacing: 0.30em;
     color: var(--logo-dark-color);
 }
@@ -173,26 +173,32 @@
 
 .position-arrow {
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 @media screen and (min-width: 1024px) {
     .position-arrow {
         margin-top: 32px;
         margin-left: 325px;
+        margin-bottom: 0;
     }
 }
+
 @media screen and (min-width: 1280px) {
     .position-arrow {
         margin-top: 40px;
         margin-left: 315px;
+        margin-bottom: 0;
     }
 }
+
 // ===================================button-additionally===============================
 .button-additionally:hover,
 .button-additionally:focus {
     background-color: var(--main-white);
     border: 2px solid var(--accent-yellow);
 }
+
 .button-additionally {
     font-family: 'Montserrat';
     font-weight: 700;
@@ -210,15 +216,18 @@
 
     transition: 600ms;
 }
+
 .pading-button {
     padding: 14px 37px;
     margin-bottom: 0;
 }
+
 .position-button-additionally {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 @media screen and (min-width: 1024px) {
     .position-button-additionally {
         position: absolute;
@@ -226,6 +235,7 @@
         bottom: 145px;
     }
 }
+
 // @media screen and (min-width: 1280px) {
 //     .position-button-additionally {
 //         bottom: 182px;
