@@ -1,0 +1,187 @@
+/* ======================section 2room-luxury============================ */
+.luxury-room {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    position: relative;
+}
+
+@media screen and (min-width: 1024px) {
+    .luxury-room {
+        padding-top: 64px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .luxury-room {
+        padding-top: 72px;
+    }
+}
+
+.content-room {
+    font-family: 'TimesNewRoman';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: calc(20 / 23);
+    color: #B4B4B4;
+    margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1024px) {
+    .content-room {
+        font-size: 32px;
+        line-height: calc(37 / 32);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .content-room {
+        margin-bottom: 4px;
+    }
+}
+
+.logo {
+    font-family: 'FilmP3';
+    font-size: 40px;
+    line-height: calc(43 / 40);
+    letter-spacing: 0.30em;
+    color: #494848;
+}
+
+@media screen and (min-width: 1024px) {
+    .logo {
+        font-size: 64px;
+        line-height: calc(69 / 64);
+    }
+}
+
+.title-room {
+    font-family: 'TimesNewRoman';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-bottom: 12px;
+    margin-top: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+    .title-room {
+        font-size: 34px;
+        line-height: calc(35 / 30);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .title-room {
+        font-size: 41px;
+        line-height: calc(41 / 36);
+    }
+}
+
+.content-room_subtitle {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    letter-spacing: 0.02em;
+    color: #5F5F5F;
+    width: 258px;
+    margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+    .content-room_subtitle {
+        font-size: 16px;
+        line-height: calc(19 / 16);
+        width: 439px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .content-room_subtitle {
+        width: 400px;
+    }
+}
+
+.room-image {
+    margin-left: auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .room-image {
+        position: absolute;
+        left: 512px;
+        top: -33px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .room-image {
+        position: absolute;
+        left: 640px;
+        top: -30px;
+    }
+}
+
+.svg-arrow {
+    width: 32px;
+    height: 32px;
+}
+
+.button-arrow {
+    border: none;
+    background-color: transparent;
+}
+
+.button-review {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.02em;
+    color: #F3C653;
+    padding: 14px 64px;
+    border: 2px solid #FFFDEE;
+    border-radius: 25px;
+    background-color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+
+}
+
+.buttons-review_item {
+    margin-bottom: 16px;
+}
+
+.reset {
+    margin-bottom: 0;
+}
+
+.pading-buton {
+    padding: 14px 37px;
+    margin-bottom: 0;
+}
+
+.buttons-arow {
+    margin-bottom: 20px;
+}
+
+.button-arrow {
+    margin-right: 33px;
+    padding: 0;
+}
+
+.btn-ar_last {
+    margin-right: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .position-desk-tablet {
+        margin-bottom: 176px;
+    }
+}
+
+/* ====================================slider================================ */
