@@ -23,7 +23,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: calc(20 / 23);
-    color: #B4B4B4;
+    color: var(--subtitle-color);
     margin-bottom: 8px;
 }
 
@@ -40,16 +40,16 @@
     }
 }
 
-.logo {
+.logo-lux-room {
     font-family: 'FilmP3';
     font-size: 40px;
     line-height: calc(43 / 40);
     letter-spacing: 0.30em;
-    color: #494848;
+    color: var(--logo-dark-color);
 }
 
 @media screen and (min-width: 1024px) {
-    .logo {
+    .logo-lux-room {
         font-size: 64px;
         line-height: calc(69 / 64);
     }
@@ -61,7 +61,7 @@
     font-size: 24px;
     line-height: calc(28 / 24);
     letter-spacing: 0.05em;
-    color: #000000;
+    color: var(--main-black);
     margin-bottom: 12px;
     margin-top: 32px;
 }
@@ -125,63 +125,112 @@
     }
 }
 
-.svg-arrow {
+// =================================temporary photo============================
+.temporary-photo_list {
+    display: flex;
+    margin-top: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+    .temporary-photo_list {
+        margin-top: 176px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .temporary-photo_list {
+        margin-top: 188px;
+    }
+}
+
+.temporary-photo_first {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .temporary-photo_first {
+        display: block;
+        margin-right: 40px;
+    }
+}
+
+// ====================================arrow button========================================
+.arrow-svg {
     width: 32px;
     height: 32px;
 }
 
-.button-arrow {
+.buton-arrow {
     border: none;
     background-color: transparent;
-}
-
-.button-review {
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(20 / 16);
-    letter-spacing: 0.02em;
-    color: #F3C653;
-    padding: 14px 64px;
-    border: 2px solid #FFFDEE;
-    border-radius: 25px;
-    background-color: #000000;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-
-}
-
-.buttons-review_item {
-    margin-bottom: 16px;
-}
-
-.reset {
-    margin-bottom: 0;
-}
-
-.pading-buton {
-    padding: 14px 37px;
-    margin-bottom: 0;
-}
-
-.buttons-arow {
-    margin-bottom: 20px;
-}
-
-.button-arrow {
-    margin-right: 33px;
     padding: 0;
+    margin-right: 32px;
 }
 
-.btn-ar_last {
+.marg-reset {
     margin-right: 0;
 }
 
+.position-arrow {
+    margin-top: 20px;
+}
+
 @media screen and (min-width: 1024px) {
-    .position-desk-tablet {
-        margin-bottom: 176px;
+    .position-arrow {
+        margin-top: 32px;
+        margin-left: 325px;
     }
 }
+@media screen and (min-width: 1280px) {
+    .position-arrow {
+        margin-top: 40px;
+        margin-left: 315px;
+    }
+}
+// ===================================button-additionally===============================
+.button-additionally:hover,
+.button-additionally:focus {
+    background-color: var(--main-white);
+    border: 2px solid var(--accent-yellow);
+}
+.button-additionally {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    letter-spacing: 0.02em;
+    color: var(--accent-yellow);
+    background-color: var(--main-black);
+    border: 2px solid var(--background-main-color);
+    border-radius: 25px;
+    padding: 14px 64px;
+    margin-bottom: 16px;
+
+    transition: 600ms;
+}
+.pading-button {
+    padding: 14px 37px;
+    margin-bottom: 0;
+}
+.position-button-additionally {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media screen and (min-width: 1024px) {
+    .position-button-additionally {
+        position: absolute;
+        right: 0;
+        bottom: 145px;
+    }
+}
+// @media screen and (min-width: 1280px) {
+//     .position-button-additionally {
+//         bottom: 182px;
+//     }
+// }
+
 
 /* ====================================slider================================ */
