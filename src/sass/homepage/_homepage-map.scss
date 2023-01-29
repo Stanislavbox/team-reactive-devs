@@ -1,0 +1,187 @@
+// Владислав Литвиненко
+
+// .contacts {}
+
+.main-contacts-wrapper {
+    padding: 36px 15px 32px 15px;
+    background-color: var(--background-main-color);
+
+}
+// Логотип посилання
+ .contacts-logo {
+    font-family: 'FilmP3';
+    font-style: normal;
+    font-size: 40px;
+    line-height: calc(43/40);
+    letter-spacing: 0.3em;
+    color: #494848;
+}
+
+//Головний текст -(Ресторанно-готельний комплекс)
+ .contacts-main-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #5F5F5F;
+
+    margin-top: 12px;
+ }
+
+// Контакти ресторан
+.contacts-restaurant-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+.contacts-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 144px;
+    height: 40px;
+    border: 0.5px solid #F3C653;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+}
+.contacts-wrapper-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24/20);
+    letter-spacing: 0.02em;
+    color: #C79002;
+
+    margin-right: 22px;
+}
+.contacts-icon {
+    fill:#C79002;
+    margin-right: 14px;
+}
+.contacts-link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(17/14);
+
+    letter-spacing: 0.02em;
+    color: #494848;
+    // margin-left: 14px;
+    display: flex;
+    align-items: center;
+    padding: 9px 8px 7px 8px;
+}
+
+// Контакти готель
+.contacts-hotel-wrapper {
+    display: flex;
+    align-items: center;
+
+    margin-top: 16px;
+}
+.contacts-tel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    height: 40px;
+    border: 0.5px solid #F3C653;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+}
+.contacts-tel-wrapper-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24/20);
+    letter-spacing: 0.02em;
+    color: #C79002;
+
+    margin-right: 54px;
+}
+
+.contacts-link-hotel{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(17/14);
+    letter-spacing: 0.02em;
+    color: #494848;
+
+    margin-right: 12px;
+}
+
+.contacts-link-hotel-second{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(17/14);
+    letter-spacing: 0.02em;
+    color: #494848;
+}
+// Псевдо-кнопка посилання на карту
+
+.map-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    height: 76px;
+    border: 0.5px solid #F3C653;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    
+    margin-top: 16px;
+    margin-left: 124px;
+}
+
+@media screen and (max-width:413px) {
+    .map-wrapper{
+        margin-left: auto;
+    }
+    .contacts-tel-wrapper{
+        flex-wrap: wrap;
+    }
+    .card-map{
+        max-width: 100%;
+    }
+}
+
+.map-icon {
+    fill:#C79002;
+}
+.map-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 8px 33px 7px 16px;
+}
+
+.map-wrapper-adress {
+    max-width: 181px;
+    // height: 61px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(17/14);
+    letter-spacing: 0.02em;
+    color: #494848;
+
+    margin-left: 16px;
+}
+
+// Карта
+.card-map {
+    width: 384px;
+    height: 220px;
+    margin-top: 32px;
+}
