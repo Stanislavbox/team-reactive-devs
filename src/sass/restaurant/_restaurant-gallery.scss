@@ -1,0 +1,139 @@
+// Анна Полюхович
+
+.restaurant-container {
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 32px; //  ДО СЛАЙДЕРА
+}
+
+.restaurant-gallery-subtitle {
+  font-family: var(--title-font);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  color: var(--subtitle-color);
+}
+
+.dark-main-logo {
+  margin-top: 12px;
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: calc(43 / 40);
+  letter-spacing: 0.3em;
+  color: var(--logo-dark-color);
+}
+
+.about-restaurant-gallery {
+  margin-top: 12px;
+  font-family: var(--text-font);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.02em;
+  color: var(--text-main-color);
+  width: 258px;
+}
+
+.about-restaurant-gallery.accent-text-rest {
+  color: var(--text-accent-color);
+  margin-top: 0;
+}
+
+.chef-img,
+.meat-img {
+  border-radius: 2px;
+  background-color: #dadada;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+}
+
+.meat-ph-and-description {
+  display: flex;
+}
+
+.about-restaurant-gallery.accent-text-rest {
+  width: 163px;
+  margin-left: 20px;
+  margin-top: 70px;
+}
+
+@media screen and (max-width: 1023px) {
+  .chef-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 32px;
+    margin-top: 28px;
+  }
+}
+
+// TABLET
+
+@media screen and (min-width: 1024px) {
+  .restaurant-container {
+    padding-top: 120px;
+    padding-bottom: 262px; //  ДО СЛАЙДЕРА
+  }
+
+  .restaurant-gallery-subtitle {
+    font-size: 32px;
+    line-height: calc(37 / 32);
+  }
+
+  .dark-main-logo {
+    font-size: 64px;
+    line-height: calc(69 / 64);
+    margin-top: 4px;
+  }
+
+  .about-restaurant-gallery {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    width: 439px;
+    margin-top: 24px;
+  }
+
+  .chef-img,
+  .meat-img {
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  }
+
+  .chef-img {
+    position: absolute;
+    top: -32px;
+    right: 112px;
+    overflow: visible;
+  }
+
+  .meat-ph-and-description {
+    margin-top: 142px;
+  }
+
+  .about-restaurant-gallery.accent-text-rest {
+    width: 312px;
+    margin-left: 48px;
+    margin-top: 195px;
+  }
+}
+
+// DESKTOP
+
+@media screen and (min-width: 1280px) {
+  .restaurant-container {
+    padding-bottom: 207px; //  ДО СЛАЙДЕРА
+  }
+
+  .about-restaurant-gallery {
+    width: 518px;
+  }
+
+  .chef-img {
+    position: absolute;
+    top: -33px;
+    right: 180px;
+    overflow: visible;
+  }
+
+  .meat-ph-and-description {
+    margin-top: 162px;
+  }
+}
