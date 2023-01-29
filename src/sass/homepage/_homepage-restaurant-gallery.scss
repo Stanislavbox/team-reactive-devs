@@ -1,0 +1,208 @@
+/*Mariia Yefymenko*/
+
+.homepage-about-restaurant {
+    padding-top: 16px;
+    padding-bottom: 20px;
+    background-color: var(--background-main-color);
+}
+
+@media screen and (min-width: 1024px) {
+
+    .homepage-about-restaurant {
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .homepage-about-restaurant {
+        padding-top: 120px;
+        padding-bottom: 32px;
+    }
+}
+
+.homepage-restaurant-undertitle {
+    margin-bottom: 12px;
+    font-family: var(--title-font);
+    font-size: 20px;
+    color: var(--subtitle-color);
+}
+
+@media screen and (min-width: 1024px) {
+
+    .homepage-restaurant-undertitle {
+        margin-bottom: 4px;
+        font-size: 32px;
+        color: var(--subtitle-color);
+    }
+}
+
+.homepage-restaurant-logo {
+    margin-bottom: 12px;
+    font-family: 'FilmP3';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+    color: var(--logo-dark-color);
+}
+
+@media screen and (min-width: 1024px) {
+
+    .homepage-restaurant-logo {
+        margin-bottom: 24px;
+        font-size: 64px;
+    }
+} 
+
+.homepage-restaurant-text.homepage-restaurant-desc {
+    width: 258px;
+}
+
+.homepage-restaurant-text {
+    margin-bottom: 28px;
+    font-family: var(--text-font);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--text-main-color);
+}
+
+@media screen and (min-width: 1024px) {
+
+    .homepage-restaurant-text {
+        width: 439px;
+        margin-bottom: 142px;
+        font-size: 16px;
+    }
+}
+
+.homepage-restaurant-holder {
+    width: 244px;
+    margin-left: auto;
+    margin-bottom: 32px;
+    background: #DADADA;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .homepage-restaurant-holder {
+        position: absolute;
+        top: -32px;
+        right: 112px;
+        width: 400px;
+        margin-left: 0;
+    }
+}
+
+.homepage-restaurant-wrapper {
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 20px;
+    margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .homepage-restaurant-wrapper {
+    column-gap: 48px;
+    margin-bottom: 32px;
+    }
+}
+
+.homepage-restaurant-inner {
+    display: block;
+    width: 200px;
+    background: #DADADA;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .homepage-restaurant-inner {
+        width: 350px;
+    }
+}
+
+.homepage-restaurant-text.hp-figcaption {
+    width: 163px;
+    margin-bottom: 0;
+    color: var(--text-accent-color);
+}
+
+@media screen and (min-width: 1024px) {
+
+    .homepage-restaurant-text.hp-figcaption {
+        width: 312px;
+        margin-bottom: 0;
+    }
+}
+
+.swiper-hp-about > .swiper-wrapper {
+    display: flex;
+    column-gap: 25px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.swiper-hp-about .swiper-slide {
+    background: #DADADA;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 1023px) {
+
+    .swiper-hp-about .swiper-slide {
+        width: 245px;
+        height: 245px;
+    }
+
+   .swiper-hp-about .swiper-slide:not(:first-child) {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .swiper-hp-about .swiper-slide {
+        width: 194px;
+        height: 194px;
+    }
+   
+    .swiper-hp-about .swiper-slide:last-child {
+        display: none;
+    }
+}
+
+.swiper-buttons.hp-about-rest {
+    display: flex;
+    column-gap: 32px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.swiper-button {
+    width: 32px;
+    height: 32px;
+    background-image: url(../images/sprite-svg.svg#icon-arrow-left);
+    background-color: transparent;
+    border: none;
+}
+
+
+
+
+
+
+
+
+

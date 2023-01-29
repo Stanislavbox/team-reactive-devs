@@ -1,0 +1,251 @@
+/*Mariia Yefymenko*/
+
+.homepage-restaurant-main {
+    background-color: #BABABA;
+}
+
+.homepage-restaurant-container {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.65);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)), url(../images/mobile/background/mob-bg-hp-2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+
+    .homepage-restaurant-container {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+            url(../images/mobile/background/mob-bg-hp-2@2x.jpeg);
+    }
+}
+
+@media screen and (min-width: 415px) {
+
+    .homepage-restaurant-container {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+            url(../images/tablet/background/tabl-bg-hp-2.jpeg);
+        background-position: left top;
+    }
+}
+
+@media screen and (min-width: 415px) and (min-device-pixel-ratio: 2),
+screen and (min-width: 481px) and (min-resolution: 192dpi),
+screen and (min-width: 481px) and (min-resolution: 2dppx) {
+    
+    .homepage-restaurant-container {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+            url(../images/tablet/background/tabl-bg-hp-2@2x.jpeg);
+        background-position: left top;
+    }
+} 
+
+@media screen and (min-width: 1024px) {
+
+    .homepage-restaurant-container {
+        padding-top: 48px;
+    }
+}
+
+
+@media screen and (min-width: 1025px) {
+
+    .homepage-restaurant-container {
+        max-width: 1280px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+            url(../images/desktop/background/desk-bg-hp-2.jpeg);
+        background-position: left top;
+    }
+}
+
+@media screen and (min-width: 1025px) and (min-device-pixel-ratio: 2),
+screen and (min-width: 769px) and (min-resolution: 192dpi),
+screen and (min-width: 769px) and (min-resolution: 2dppx) {
+    
+    .homepage-restaurant-container {
+        max-width: 2560px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+            url(../images/desktop/background/desk-bg-hp-2@2x.jpeg);
+        background-position: left top;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .homepage-restaurant-container > .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding-top: 24px;
+        padding-bottom: 40px;
+    }
+}
+
+.homepage-restaurant-top {
+    margin-left: 31px;
+    margin-bottom: 20px;
+    
+} 
+
+@media screen and (min-width: 414px) {
+
+    .homepage-restaurant-top {
+            margin-left: 125px;
+    }
+}
+
+.homepage-restaurant-logo.hp-restaurant {
+    margin-bottom: 12px;
+    font-family:'FilmP3';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.075px;
+    letter-spacing: 0.3em;
+    color: var(--main-white);
+}
+
+.homepage-restaurant-title {
+    margin-bottom: 20px;
+    font-family: var(--text-font);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--main-white);
+}
+
+@media screen and (min-width: 1024px) {
+
+    .homepage-restaurant-title {
+        margin-bottom: 8px;
+       
+    }
+}
+
+.homepage-restaurant-text.hp-restaurant {
+    width: 258px;
+    margin-bottom: 0;
+    color: #BABABA;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .homepage-restaurant-text.hp-restaurant {
+        width: 610px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .homepage-restaurant-bottom {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.homepage-restaurant-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+@media screen and (min-width: 1024px) {
+    .homepage-restaurant-slider {
+        column-gap: 34px;
+    }
+
+}
+
+@media screen and (max-width: 1023px) {
+    .homepage-restaurant-element:not(:first-child) {
+            display: none;
+    }
+    
+}
+
+.restaurant-holder {
+    width: 274px;
+    /*background: #DADADA;*/
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+@media screen and (min-width: 1024px) {
+    .restaurant-holder {
+        width: 270px;
+    }
+
+    .homepage-restaurant-element:not(:first-child) > .restaurant-holder {
+        width: 162px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .homepage-restaurant-buttons {
+        margin-right: 29px;
+    }
+
+}
+
+.homepage-restaurant-btn {
+    display: block;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    cursor: pointer;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #F3C653;
+}
+
+.homepage-restaurant-link {
+    display: block;
+    width: 236px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 29px;
+    padding-right: 29px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #F3C653;
+
+}
+
+
