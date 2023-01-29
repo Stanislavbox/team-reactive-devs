@@ -107,13 +107,19 @@
 
 .room-image {
   margin-left: auto;
+  background: var(--background-image);
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
 }
+
 
 @media screen and (min-width: 1024px) {
   .room-image {
     position: absolute;
     left: 512px;
     top: -33px;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    border-radius: 0;
   }
 }
 
@@ -122,6 +128,7 @@
     position: absolute;
     left: 640px;
     top: -30px;
+    border-radius: 2px;
   }
 }
 
@@ -235,12 +242,12 @@
   }
 }
 .position-desk-tablet {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 @media screen and (min-width: 1024px) {
-    .position-desk-tablet {
-            margin-bottom: 0;
-        }
+  .position-desk-tablet {
+    margin-bottom: 0;
+  }
 }
 
 // @media screen and (min-width: 1280px) {
