@@ -70,7 +70,6 @@
 
     letter-spacing: 0.02em;
     color: #494848;
-    // margin-left: 14px;
     display: flex;
     align-items: center;
     padding: 9px 8px 7px 8px;
@@ -126,8 +125,8 @@
     letter-spacing: 0.02em;
     color: #494848;
 }
-// Псевдо-кнопка посилання на карту
 
+// Псевдо-кнопка посилання на карту
 .map-wrapper {
     display: flex;
     align-items: center;
@@ -167,7 +166,6 @@
 
 .map-wrapper-adress {
     max-width: 181px;
-    // height: 61px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -203,7 +201,6 @@
     .contacts-logo{
         font-size: 64px;
         line-height: calc(69/64);
-        // margin-top: 56px;
     }
     .contacts-main-text{
         margin-top: 8px;
@@ -223,6 +220,7 @@
     }
     .contacts-hotel-wrapper > .contacts-tel-wrapper{
         margin-top: 8px;
+        width: 264;
     }
     .map-wrapper{
         margin-top: 48px;
@@ -253,3 +251,30 @@
     }
 }
 
+// === Для десктопа===
+
+@media screen and (min-width: 1280px){
+    .main-contacts-wrapper{
+        padding-left: 85px;
+    }
+    .contacts-tablet{
+        margin-top: 56px;
+        margin-bottom: 73px;
+    }
+    .contacts-main-text{
+        font-size: 20px;
+        line-height: calc(24/20);
+        margin-top: 16px;
+    }
+    .contacts-wrapper-text {
+        margin-top: 40px;
+    }
+    .iframe-wrapper {
+        padding-top: 64px;
+        padding-right: 85px;
+        padding-bottom: 74px;
+    }
+    .card-map{
+        width: 634px;
+    }
+}
