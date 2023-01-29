@@ -1,6 +1,6 @@
 <!-- Veronika -->
 <section class="hotel-gallery-double">
-  <div class="container">
+  <div class="container hotel-gallery-double-container">
     <!-- logo+text -->
     <div class="hotel-room-two-logo-box">
       <p class="hotel-room-two-logo-text">Amet minim mollit non</p>
@@ -76,7 +76,8 @@
                 /src/images/mobile/slider/hotel/mob-sl-hotel-1@2x.jpeg 2x
               "
             />
-            <img class="hotel-room-two-slider-img"
+            <img
+              class="hotel-room-two-slider-img"
               class=""
               src="./images/mobile/slider/hotel/mob-sl-hotel-1.jpeg"
               alt="Галерея"
@@ -107,7 +108,8 @@
                 /src/images/mobile/slider/hotel/mob-sl-hotel-2@2x.jpeg 2x
               "
             />
-            <img class="hotel-room-two-slider-img"
+            <img
+              class="hotel-room-two-slider-img"
               class=""
               src="./images/mobile/slider/hotel/mob-sl-hotel-2.jpeg"
               alt="Галерея"
@@ -118,19 +120,14 @@
     </div>
 
     <!-- buttons -->
-    <ul class="hotel-room-two-btn-list list">
-      <li>
-        <button class="hotel-room-two-btn hotel-room-two-btn-one" type="button">
-          <a class="hotel-room-two-btn-link link" href="/src/room.html"
-            >Детальніше</a
-          >
-        </button>
-      </li>
-      <li>
-        <button class="hotel-room-two-btn" data-modal-open type="button">
-          <a class="hotel-room-two-btn-link link" href="#">Переглянути ціни</a>
-        </button>
-      </li>
-    </ul>
+    <div class="hotel-room-two-btn-list">
+      <a class="hotel-room-two-btn-link link" href="/src/room.html"
+        >Детальніше</a
+      >
+
+      <button class="hotel-room-two-btn" data-modal-open type="button">
+        Переглянути ціни
+      </button>
+    </div>
   </div>
 </section>
