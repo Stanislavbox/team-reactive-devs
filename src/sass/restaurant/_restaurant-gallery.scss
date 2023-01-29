@@ -1,9 +1,13 @@
 // Анна Полюхович
+.restaurant-gallery-section {
+    background-color: var(--background-main-color);
+}
 
 .restaurant-container {
   position: relative;
   padding-top: 16px;
   padding-bottom: 32px; //  ДО СЛАЙДЕРА
+  
 }
 
 .restaurant-gallery-subtitle {
