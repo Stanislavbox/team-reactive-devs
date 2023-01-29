@@ -7,7 +7,7 @@
     background-color: var(--background-main-color);
 
 }
-// Логотип посилання
+// Логотип посилання-mobile
  .contacts-logo {
     font-family: 'FilmP3';
     font-style: normal;
@@ -185,3 +185,71 @@
     height: 220px;
     margin-top: 32px;
 }
+
+// === Для планшета ===
+
+// Логотип посилання-tablet
+@media screen and (min-width: 1024px) {
+    .main-contacts-wrapper {
+        display: flex;
+        padding: 0px;
+        justify-content: space-between;
+        padding-left: 47px;
+    }
+    .contacts-tablet{
+        margin-top: 56px;
+        margin-bottom: 44px;
+    }
+    .contacts-logo{
+        font-size: 64px;
+        line-height: calc(69/64);
+        // margin-top: 56px;
+    }
+    .contacts-main-text{
+        margin-top: 8px;
+    }
+    .contacts-restaurant-wrapper{
+        display: block;
+    }
+    .contacts-restaurant-wrapper > .contacts-wrapper{
+        margin-top: 8px;
+    }
+    .contacts-wrapper-text{
+        margin-top: 52px;
+    }
+    .contacts-hotel-wrapper{
+        display: block;
+        margin-top: 24px;
+    }
+    .contacts-hotel-wrapper > .contacts-tel-wrapper{
+        margin-top: 8px;
+    }
+    .map-wrapper{
+        margin-top: 48px;
+        margin-left: 0px;
+        width: 285px;
+        height: 56px;
+    }
+    .map-wrapper-adress{
+        max-width: 233px;
+
+    }
+    .map-link{
+        padding: 0;
+    }
+    .iframe-wrapper{
+        padding-top: 69px;
+        padding-right: 47px;
+        padding-bottom: 40px;
+    }
+    .card-map{
+        width: 535px;
+        height: 412px;
+        margin-top: 0px;
+
+        border: 1px solid #BABABA;
+        box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+    }
+}
+
