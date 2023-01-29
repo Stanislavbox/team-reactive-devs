@@ -1,38 +1,134 @@
+<!-- Veronika -->
 <section class="hotel-gallery-double">
   <div class="container">
-    <div>
-      <p class="content-room">Amet minim mollit non</p>
-      <a class="logo link" href="#">MIMIHO</a>
+    <!-- logo+text -->
+    <div class="hotel-room-two-logo-box">
+      <p class="hotel-room-two-logo-text">Amet minim mollit non</p>
+      <a class="hotel-room-two-logo link" href="/src/index.html">MIMIHO</a>
     </div>
 
-    <div>
-      <h2 class="title-room">ДВОМІСНИЙ НОМЕР</h2>
-      <p class="content-room_subtitle">
+    <!-- title+text -->
+    <div class="hotel-room-two-title-box">
+      <h2 class="hotel-room-two-title">ДВОМІСНИЙ НОМЕР</h2>
+      <p class="hotel-room-two-subtitle">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. Exercitation
         veniam consequat sunt nostrud amet.
       </p>
     </div>
 
-    <img
-      srcset="
-        /src/images/mobile/mob-hotel-room.jpeg    1x,
-        /src/images/mobile/mob-hotel-room@2x.jpeg 2x
-      "
-      scr="/src/images/mobile/mob-hotel-room.jpeg"
-      width="244"
-      alt="ДВОМІСНИЙ НОМЕР"
-    />
+    <!-- img-room -->
+    <picture>
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./images/desktop/desk-hotel-room.jpeg    1x,
+          ./images/desktop/desk-hotel-room@2x.jpeg 2x
+        "
+        type="image/jpeg"
+      />
+      <source
+        media="(min-width: 1024px)"
+        srcset="
+          ./images/tablet/tabl-hotel-room.jpeg    1x,
+          ./images/tablet/tabl-hotel-room@2x.jpeg 2x
+        "
+        type="image/jpeg"
+      />
+      <source
+        media="(max-width: 1023px)"
+        srcset="
+          ./images/mobile/mob-hotel-room.jpeg    1x,
+          ./images/mobile/mob-hotel-room@2x.jpeg 2x
+        "
+        type="image/jpeg"
+      />
+      <img
+        class="hotel-room-two-img"
+        src="/src/images/mobile/mob-hotel-room.jpeg"
+        alt="ДВОМІСНИЙ НОМЕР"
+      />
+    </picture>
 
-    <ul class="list">
+    <!-- slider -->
+    <div class="hotel-room-two-slider">
+      <ul class="hotel-room-two-slider-list list">
+        <li class="hotel-room-two-slider-li">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/desktop/slider/hotel/desk-sl-hotel-1.jpeg    1x,
+                ./images/desktop/slider/hotel/desk-sl-hotel-1@2x.jpeg 2x
+              "
+            />
+            <source
+              media="(min-width: 1024px)"
+              srcset="
+                /src/images/tablet/slider/hotel/tabl-sl-hotel-1.jpeg    1x,
+                /src/images/tablet/slider/hotel/tabl-sl-hotel-1@2x.jpeg 2x
+              "
+            />
+            <source
+              media="(max-width: 1023px)"
+              srcset="
+                /src/images/mobile/slider/hotel/mob-sl-hotel-1.jpeg    1x,
+                /src/images/mobile/slider/hotel/mob-sl-hotel-1@2x.jpeg 2x
+              "
+            />
+            <img class="hotel-room-two-slider-img"
+              class=""
+              src="./images/mobile/slider/hotel/mob-sl-hotel-1.jpeg"
+              alt="Галерея"
+            />
+          </picture>
+        </li>
+
+        <li class="hotel-room-two-slider-li">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/desktop/slider/hotel/desk-sl-hotel-2.jpeg    1x,
+                ./images/desktop/slider/hotel/desk-sl-hotel-2@2x.jpeg 2x
+              "
+            />
+            <source
+              media="(min-width: 1024px)"
+              srcset="
+                /src/images/tablet/slider/hotel/tabl-sl-hotel-2.jpeg    1x,
+                /src/images/tablet/slider/hotel/tabl-sl-hotel-2@2x.jpeg 2x
+              "
+            />
+            <source
+              media="(max-width: 1023px)"
+              srcset="
+                /src/images/mobile/slider/hotel/mob-sl-hotel-2.jpeg    1x,
+                /src/images/mobile/slider/hotel/mob-sl-hotel-2@2x.jpeg 2x
+              "
+            />
+            <img class="hotel-room-two-slider-img"
+              class=""
+              src="./images/mobile/slider/hotel/mob-sl-hotel-2.jpeg"
+              alt="Галерея"
+            />
+          </picture>
+        </li>
+      </ul>
+    </div>
+
+    <!-- buttons -->
+    <ul class="hotel-room-two-btn-list list">
       <li>
-        <button type="button">
-          <a class="link" href="/src/room.html">Детальніше</a>
+        <button class="hotel-room-two-btn hotel-room-two-btn-one" type="button">
+          <a class="hotel-room-two-btn-link link" href="/src/room.html"
+            >Детальніше</a
+          >
         </button>
       </li>
       <li>
-        <button data-modal-open type="button">
-          <a class="link" href="#">Переглянути ціни</a>
+        <button class="hotel-room-two-btn" data-modal-open type="button">
+          <a class="hotel-room-two-btn-link link" href="#">Переглянути ціни</a>
         </button>
       </li>
     </ul>
