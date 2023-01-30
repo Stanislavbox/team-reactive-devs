@@ -277,13 +277,19 @@
     border: 2px solid var(--background-section-color-accent);
     border-radius: 25px;
 
-    transition: background-color 250ms linear, border-color 250ms linear;
+    transition: background-color var(--animation), border-color var(--animation);
 }
 
 .hotel-gallery-triple-btn:hover,
 .hotel-gallery-triple-btn:focus {
     background-color: var(--main-white);
     border-color: var(--accent-yellow);
+}
+
+@media screen and (min-width: 1024px) {
+    .hotel-gallery-triple-btn {
+        border: 2px solid var(--main-white);
+    }
 }
 
 .hotel-gallery-triple-link {
