@@ -10,7 +10,7 @@
 @import './room';
 @import './footer';
 
-// Modal-Stylesnpm start
+// ****** All modal window ******
 
 
 .backdrop{
@@ -21,7 +21,7 @@
     width: 100%;
     height: 100%;
 
-    background: rgb(255, 253, 238,0.4);
+    background: rgb(255, 253, 238,0.5);
 
     opacity: 1;
     visibility: visible;
@@ -34,21 +34,26 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    // margin-right: 16px;
-//   width: calc(100%-18px);
-     height: auto;
-//   max-height: 80vh;
-//   overflow: auto;
-
-//   background: #fcfcfc;
-//   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-//     0px 2px 1px rgba(0, 0, 0, 0.2);
-//   border-radius: 4px;
-
-//   opacity: 1;
+  
+    width: calc(100% - 18px);
+    height: auto;
+    max-height: 80vh;
+    overflow: auto;
+  
+    // background: #fcfcfc;
+    // box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    //   0px 2px 1px rgba(0, 0, 0, 0.2);
+    // border-radius: 4px;
+  
+    opacity: 1;
     transform: translate(-50%, -50%) scale(1);
-//   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-//     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    //   opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    background: #FFFDEE;
+    border-radius: 2px;
+
+    // outline: 1px solid red;
 }
 .modal-close-btn {
     position: absolute;
@@ -65,9 +70,7 @@
     height: 24px;
     background: transparent;
     border: none;
-    // border: 1px solid rgba(0, 0, 0, 0.1);
-    // border-radius: 50%;
-  
+
     // transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -78,22 +81,12 @@
 }
 
 .modal > form{
-    width: 414px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 6px;
+    padding-left: 6px;
 }
 
-// Modal___ЗАБРОНЮВАТИ СТОЛИК
-.modal-booked-table{
-    outline: 2px solid red;
-    // 
-    // width: 414px;
-    // padding-right: 15px;
-    // padding-left: 15px;
-
-    background: #FFFDEE;
-    border-radius: 2px;
-}
+// ===== Modal___ЗАБРОНЮВАТИ СТОЛИК =====
+// .modal-booked-table{}
 
 .modal-main-text{
     font-family: 'Times New Roman';
@@ -118,7 +111,7 @@
 .feedback-input{
     display: flex;
 
-    width: 384px;
+    width: 100%;
     height: 54px;
 
     background-color: transparent;
@@ -183,28 +176,16 @@
     color: #000000;
 }
 
-// Modal___ЗАБРОНЮВАТИ НОМЕР 
-.modal-room-reservation{
-    outline: 2px solid red;
-    width: 414px;
-
-    background: #FFFDEE;
-    border-radius: 2px;
-}
+// ===== Modal___ЗАБРОНЮВАТИ НОМЕР =====
+// .modal-room-reservation{}
 
 .label-wrapper {
     margin-top: 8px;
     margin-bottom: 20px;
 }
 
-// Modal___Ціна
-.modal-room-price{
-    outline: 2px solid red;
-    width: 414px;
-
-    background: #FFFDEE;
-    border-radius: 2px;
-}
+// ===== Modal___Ціна =====
+// .modal-room-price{}
 
 .modal-type-text{
     font-family: 'Times New Roman';
