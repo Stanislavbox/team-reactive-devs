@@ -47,6 +47,12 @@
   border-radius: 25px;
 
   cursor: pointer;
+  transition: background-color 0.25s linear;
+}
+.room-amenities-btn:hover,
+.room-amenities-btn:focus {
+  background-color: var(--accent-yellow);
+  color: var(--main-black);
 }
 .room-amenities-link {
   color: var(--text-accent-color);
@@ -56,9 +62,18 @@
   display: flex;
   gap: 12px;
   justify-content: center;
+  transition: color 0.25s linear;
+}
+.room-amenities-link:hover,
+.room-amenities-link:focus {
+  color: var(--accent-yellow);
 }
 .room-amenities-icon {
   fill: currentColor;
+}
+.room-amenities-link:hover > .room-amenities-icon,
+.room-amenities-link:focus > .room-amenities-icon {
+  fill: none;
 }
 
 @media screen and(min-width: 1024px) {
