@@ -1,5 +1,7 @@
-.room-amenities-container {
+.room-amenities-section {
   background-color: var(--background-main-color);
+}
+.room-amenities-container {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -57,4 +59,28 @@
 }
 .room-amenities-icon {
   fill: currentColor;
+}
+
+@media screen and(min-width: 1024px) {
+  .room-amenities-subtitle ~ .room-amenities-text {
+    max-width: 400px;
+  }
+  .room-amenities-text:not(:first-child):not(:last-child) {
+    margin-bottom: 0;
+  }
+  .room-amenities-wrap {
+    display: flex;
+    gap: 80px;
+  }
+  .room-amenities-link {
+    justify-content: flex-end;
+  }
+  .room-amenities-btn {
+    margin-right: 0;
+  }
+}
+@media screen and(min-width: 1280px) {
+  .room-amenities-wrap {
+    gap: 159px;
+  }
 }
