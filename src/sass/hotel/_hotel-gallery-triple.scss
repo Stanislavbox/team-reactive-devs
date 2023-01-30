@@ -1,15 +1,25 @@
-.hotel-gallery-triple {
-    position: relative;
-    padding-top: 32px;
-    padding-bottom: 32px;
+// Юля Балабуха
 
+.hotel-gallery-triple {
     background-color: var(--background-section-color-accent);
 }
 
+.hotel-gallery-triple-wrap {
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 @media screen and (min-width: 1024px) {
-    .hotel-gallery-triple {
+    .hotel-gallery-triple-wrap {
         padding-top: 66px;
         padding-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hotel-gallery-triple-wrap {
+        padding-top: 72px;
     }
 }
 
@@ -30,6 +40,12 @@
         margin-bottom: 4px;
 
         font-size: 32px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hotel-gallery-triple-pretitle {
+        margin-right: 57px;
     }
 }
 
@@ -54,6 +70,13 @@
     }
 }
 
+@media screen and (min-width: 1280px) {
+    .hotel-gallery-triple-logo {
+        margin-right: 57px;
+        margin-bottom: 72px;
+    }
+}
+
 .hotel-gallery-triple-logo-part {
     letter-spacing: 0.3em;
 }
@@ -64,11 +87,17 @@
 
     font-family: var(--title-font);
     font-weight: 700;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.167;
     letter-spacing: 0.05em;
     color: var(--main-black);
     text-transform: uppercase;
+}
+
+@media screen and (min-width: 333px) {
+    .hotel-gallery-triple-title {
+        font-size: 24px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -78,6 +107,15 @@
 
         font-size: 30px;
         line-height: 1.133;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hotel-gallery-triple-title {
+        margin-right: 57px;
+        margin-bottom: 24px;
+
+        font-size: 36px;
     }
 }
 
@@ -112,24 +150,39 @@
     }
 }
 
-.hotel-gallery-triple-img {
-    background: #DADADA;
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
+@media screen and (min-width: 1280px) {
+    .hotel-gallery-triple-text {
+        margin-bottom: 188px;
+        margin-left: auto;
+        margin-right: 110px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .hotel-gallery-triple-img-original {
+        border-radius: 2px;
+        overflow: hidden;
+        background: var(--background-color-for-pictures);
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    }
 }
 
 @media screen and (min-width: 1024px) {
     .hotel-gallery-triple-img {
-        box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
         position: absolute;
         top: - 32px;
-        left: 97px;
+        left: 112px;
+
+        box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+        background: var(--background-color-for-pictures);
     }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
+@media screen and (min-width: 1280px) {
     .hotel-gallery-triple-img {
-        border-radius: 0;
+        left: 180px;
+        border-radius: 2px;
+        overflow: hidden;
     }
 }
 
@@ -138,13 +191,14 @@
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
-        margin-top: 169px;
     }
 }
 
-.hotel-gallery-triple-wrapper {
-    margin-top: 32px;
-    margin-bottom: 20px;
+@media screen and (max-width: 1023px) {
+    .hotel-gallery-triple-wrapper {
+        margin-top: 32px;
+        margin-bottom: 20px;
+    }
 }
 
 .hotel-gallery-triple-list-img {
@@ -161,13 +215,14 @@
 .hotel-gallery-triple-item-img {
     margin-left: auto;
 
-    background: #DADADA;
+    background: var(--background-color-for-pictures);
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 }
 
 @media screen and (max-width: 1023px) {
-    .hotel-gallery-triple-item-img {
+    .hotel-gallery-triple-first-img {
         border-radius: 2px;
+        overflow: hidden;
     }
 
     .hotel-gallery-triple-second-img {
@@ -185,13 +240,30 @@
 
 .hotel-gallery-triple-item-icon {
     margin-right: 32px;
-    margin-left: auto;
+}
+
+@media screen and (max-width: 1023px) {
+.hotel-gallery-triple-item-icon {
+        margin-left: auto;
+    }
 }
 
 .hotel-gallery-triple-wrapper-btn {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .hotel-gallery-triple-wrapper-btn {
+        margin-top: 41px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hotel-gallery-triple-wrapper-btn {
+        margin-top: 72px;
+    }
 }
 
 .hotel-gallery-triple-btn {
@@ -201,18 +273,17 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: var(--accent-yellow);
-
     background: var(--main-black);
     border: 2px solid var(--background-section-color-accent);
     border-radius: 25px;
+
+    transition: background-color 250ms linear, border-color 250ms linear;
 }
 
 .hotel-gallery-triple-btn:hover,
 .hotel-gallery-triple-btn:focus {
-    color: var(--accent-yellow);
-    background: var(--main-white);
-    border: 2px solid var(--accent-yellow);
-    border-radius: 25px;
+    background-color: var(--main-white);
+    border-color: var(--accent-yellow);
 }
 
 .hotel-gallery-triple-link {
