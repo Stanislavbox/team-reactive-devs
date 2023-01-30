@@ -1,5 +1,9 @@
 // Максим писал стили
 .header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
   background: linear-gradient(
     180deg,
     #000000 0%,
@@ -144,10 +148,10 @@
   border-radius: 2px;
 
   &--icon {
-    width: 10;
-    height: 16;
+    width: 20;
+    height: 20;
 
-    margin-right: 13px;
+    margin-right: 8px;
     fill: var(--accent-yellow);
   }
 
