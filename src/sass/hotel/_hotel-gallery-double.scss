@@ -1,14 +1,35 @@
 // Veronika
 .hotel-gallery-double {
+    background-color: var(--background-main-color);
+}
+
+.hotel-gallery-double-container {
     position: relative;
-    background-color:var(--background-main-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+// tablet
+@media screen and (min-width: 1024px) {
+    .hotel-gallery-double-container {
+        padding-top: 64px;
+        padding-bottom: 104px;
+    }
+}
+
+// desktop
+@media screen and (min-width: 1280px) {
+    .hotel-gallery-double-container {
+        padding-top: 72px;
+        padding-bottom: 104px;
+    }
 }
 
 
 // logo+text
 .hotel-room-two-logo-box {
+    display: inline-block;
     margin-bottom: 32px;
-    padding-top: 32px;
 }
 
 .hotel-room-two-logo-text {
@@ -17,12 +38,12 @@
     font-size: 20px;
     line-height: 1.1;
 
-    color:var(--subtitle-color);
+    color: var(--subtitle-color);
 }
 
 .hotel-room-two-logo {
-    font-family:'FilmP3', 
-    sans-serif;
+    font-family: 'FilmP3',
+        sans-serif;
     font-size: 40px;
     line-height: 1.1;
 
@@ -31,11 +52,12 @@
     color: var(--logo-dark-color);
 }
 
-            // tablet
+// tablet
 @media screen and (min-width: 1024px) {
     .hotel-room-two-logo-box {
         margin-bottom: 62px;
-        padding-top: 64px;
+        padding-top: 0;
+        width: 304px;
     }
 
     .hotel-room-two-logo-text {
@@ -48,11 +70,10 @@
     }
 }
 
-            // desktop
+// desktop
 @media screen and (min-width: 1280px) {
     .hotel-room-two-logo-box {
         margin-bottom: 62px;
-        padding-top: 72px;
     }
 }
 
@@ -85,14 +106,16 @@
     color: var(--text-main-color);
 }
 
-            // tablet 
+// tablet 
 @media screen and (min-width: 1024px) {
     .hotel-room-two-title-box {
-        margin-bottom: 0px;
+        margin-bottom: 174px;
+        width: 439px;
     }
 
     .hotel-room-two-title {
         margin-bottom: 16px;
+        margin-left: 0;
 
         font-size: 30px;
         line-height: 1.1;
@@ -100,20 +123,24 @@
 
     .hotel-room-two-subtitle {
         width: 439px;
-    
+
         font-size: 16px;
         line-height: 1.1;
     }
 }
 
-            // desktop
-@media screen and (min-width: 1280px) { 
+// desktop
+@media screen and (min-width: 1280px) {
+    .hotel-room-two-title-box {
+        width: 400px;
+    }
+
     .hotel-room-two-title {
         margin-bottom: 24px;
-    
+
         font-size: 36px;
     }
-    
+
     .hotel-room-two-subtitle {
         width: 400px;
     }
@@ -122,39 +149,48 @@
 // img-room
 .hotel-room-two-img {
     margin-left: auto;
+    margin-bottom: 20px;
+
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
 }
 
-            // tablet
+// tablet
 @media screen and (min-width: 1024px) {
     .hotel-room-two-img {
         position: absolute;
         top: -32px;
         right: 112px;
+        margin-bottom: 0;
+
+        box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+        border-radius: 0px;
     }
 }
 
-            // desktop
+// desktop
 @media screen and (min-width: 1280px) {
     .hotel-room-two-img {
         position: absolute;
         right: 180px;
+
+        border-radius: 2px;
     }
 }
 
 // slider
 .hotel-room-two-slider-list {
     display: none;
-    padding-bottom: 104px;
 }
 
 .hotel-room-two-slider-img {
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 }
 
-            // tablet
+// tablet
 @media screen and (min-width: 1024px) {
     .hotel-room-two-slider-list {
-        margin-top: 174px;
+        // margin-top: 174px;
         display: flex;
     }
 
@@ -162,18 +198,13 @@
         margin-right: 40px;
     }
 }
-            // desktop
-@media screen and (min-width: 180px) {
-    .hotel-room-two-slider-list {
-        margin-top: 188px;
-    }
-}
+
+// desktop
 
 
 // buttons
 .hotel-room-two-btn-list {
-    margin-top: 20px;
-    padding-bottom: 32px;
+    margin: 0 auto;
 
     text-align: center;
 }
@@ -186,12 +217,14 @@
 
     font-family: var(--text-font);
     font-weight: 700;
-    
+
     letter-spacing: 0.02em;
 
+    color: var(--accent-yellow);
     background-color: var(--main-black);
     border-radius: 25px;
     border: 2px solid #FFFDEE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .hotel-room-two-btn:hover,
@@ -200,28 +233,55 @@
     color: var(--accent-yellow);
 
     border: 2px solid #F3C653;
-}
 
-.hotel-room-two-btn-one {
-    margin-bottom: 16px;
+    cursor: pointer;
 }
 
 .hotel-room-two-btn-link {
-    width: 100%;
+    display: inline-block;
+    margin-bottom: 16px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    width: 236px;
+    height: 48px;
+
+    font-family: var(--text-font);
+    font-weight: 700;
+
+    letter-spacing: 0.02em;
 
     color: var(--accent-yellow);
+    background-color: var(--main-black);
+    border-radius: 25px;
+    border: 2px solid #FFFDEE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-            // tablet
+.hotel-room-two-btn-link:hover,
+.hotel-room-two-btn-link:focus {
+    background: var(--main-white);
+    color: var(--accent-yellow);
+
+    border: 2px solid #F3C653;
+    box-shadow: none;
+}
+
+// tablet
 @media screen and (min-width: 1024px) {
     .hotel-room-two-btn-list {
         position: absolute;
         top: 581px;
         right: 47px;
         margin: 0;
+        padding-bottom: 0;
+    }
+
+    .hotel-room-two-btn-link {
+        display: block;
     }
 }
-            // desktop
+
+// desktop
 @media screen and (min-width: 1280px) {
     .hotel-room-two-btn-list {
         position: absolute;
@@ -230,4 +290,3 @@
         margin: 0;
     }
 }
-
