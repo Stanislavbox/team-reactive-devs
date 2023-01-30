@@ -1,3 +1,4 @@
+<!-- ===========================Kharabara Roman=================================== -->
 <section class="luxury-room_section">
   <div class="container">
     <div class="luxury-room">
@@ -28,9 +29,16 @@
           "
           type="image/jpeg"
         />
+        <source
+          media="(min-width: 320px)"
+          srcset="
+            ./images/mobile/mob-hotel-room.jpeg    1x,
+            ./images/mobile/mob-hotel-room@2x.jpeg 2x
+          "
+          type="image/jpeg"
+        />
         <img
           class="room-image"
-          srcset="./images/mobile/mob-hotel-room.jpeg"
           src="/src/images/mobile/mob-hotel-room.jpeg"
           alt="luxury-room"
         />
@@ -60,7 +68,11 @@
         </button>
       </div>
       <div class="position-button-additionally">
-        <a class="button-additionally link" href="#">Детальніше</a>
+        <a
+          class="button-additionally link"
+          href="https://stanislavbox.github.io/team-reactive-devs/room.html"
+          >Детальніше</a
+        >
         <button class="button-additionally pading-button" type="button">
           Переглянути ціни
         </button>
