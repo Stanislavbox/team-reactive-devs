@@ -1,11 +1,12 @@
 // Владислав Литвиненко
 
-// .contacts {}
+.contacts {
+    background-color: var(--background-main-color);
+}
 
 .main-contacts-wrapper {
     padding: 36px 15px 32px 15px;
-    background-color: var(--background-main-color);
-
+    // background-color: var(--background-main-color);
 }
 // Логотип посилання-mobile
  .contacts-logo {
