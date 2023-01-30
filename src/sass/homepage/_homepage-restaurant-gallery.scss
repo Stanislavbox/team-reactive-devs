@@ -13,14 +13,15 @@
 
     .homepage-about-restaurant > .container {
         position: relative;
+        padding-top: 120px;
+        padding-bottom: 262px;
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
 
     .homepage-about-restaurant > .container {
-        padding-top: 120px;
-        padding-bottom: 262px;
+        padding-bottom: 225px;
     }
 }
 
@@ -115,6 +116,8 @@
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     overflow: hidden;
     border-radius: 2px;
+    display: inline-block;
+    margin-bottom: 32px;
 }
 
 @media screen and (max-width: 413px) {
@@ -232,15 +235,24 @@
 } 
 
 .slider-hp-about  {
-    align-self: flex-end;
+   align-self: center;
 }
 
 @media screen and (min-width: 1024px) {
 
     .slider-hp-about {
         position: absolute;
-        bottom: 96px;
+        bottom: 32px;
         right: 60px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .slider-hp-about {
+        position: absolute;
+        bottom: 50px;
+        right: 85px;
     }
 }
 
@@ -283,6 +295,7 @@
 }
 
 @media screen and (min-width: 1280px) {
+    
     .slider-hp-about .slider-el {
         width: 254px;
         height: 254px;
@@ -296,6 +309,6 @@
 .slider-buttons.hp-about-restaurant {
     display: flex;
     column-gap: 32px;
-    justify-content: flex-end;
     align-items: center;
+    justify-content: flex-end;
 }
