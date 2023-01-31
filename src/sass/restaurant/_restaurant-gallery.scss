@@ -16,10 +16,10 @@
   font-size: 20px;
   line-height: calc(23 / 20);
   color: var(--subtitle-color);
+  margin-bottom: 12px;
 }
 
 .dark-main-logo {
-  margin-top: 12px;
   font-family: var(--logo-font);
   font-weight: 700;
   font-size: 40px;
@@ -93,12 +93,12 @@
   .restaurant-gallery-subtitle {
     font-size: 32px;
     line-height: calc(37 / 32);
+    margin-bottom: 4px;
   }
 
   .dark-main-logo {
     font-size: 64px;
     line-height: calc(69 / 64);
-    margin-top: 4px;
   }
 
   .about-restaurant-gallery {
