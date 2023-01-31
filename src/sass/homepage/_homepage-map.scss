@@ -152,6 +152,21 @@
     .card-map{
         max-width: 100%;
     }
+
+    .contacts-wrapper{
+        width: 166px;
+    }
+
+    // .contacts-tel-wrapper-text{
+    //     margin-right: 5px;
+    // }
+    // .contacts-tel-wrapper{
+       
+    // }
+    .iframe-wrapper {
+        display: none;
+    }
+    
 }
 
 .map-icon {
@@ -183,6 +198,10 @@
     width: 384px;
     height: 220px;
     margin-top: 32px;
+
+    border: 1px solid #BABABA;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
 }
 
 // === Для планшета ===
@@ -245,10 +264,6 @@
         width: 535px;
         height: 412px;
         margin-top: 0px;
-
-        border: 1px solid #BABABA;
-        box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
-        border-radius: 2px;
     }
 }
 
