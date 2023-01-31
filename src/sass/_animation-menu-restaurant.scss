@@ -1,0 +1,9 @@
+.restaurant-section-title {
+  opacity: 0;
+  transform: translateY(100%);
+}
+.restaurant-section-title.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+}
