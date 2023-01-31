@@ -46,8 +46,11 @@
   margin-right: auto;
 }
 @media screen and (min-width: 320px) and (max-width: 413px) {
+  .footer-container {
+    column-gap: 30px;
+  }
   .footer-logo {
-    margin-right: 60px;
+    font-size: 20px;
   }
 }
 .footer-social-item {
