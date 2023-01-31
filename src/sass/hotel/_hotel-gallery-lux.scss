@@ -165,41 +165,7 @@
 }
 
 // ====================================arrow button========================================
-.arrow-svg {
-  width: 32px;
-  height: 32px;
-}
 
-.buton-arrow {
-  border: none;
-  background-color: transparent;
-  padding: 0;
-  margin-right: 32px;
-}
-
-.marg-reset {
-  margin-right: 0;
-}
-
-.position-arrow {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-@media screen and (min-width: 1024px) {
-  .position-arrow {
-    margin-top: 32px;
-    margin-left: 325px;
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .position-arrow {
-    margin-top: 40px;
-    margin-left: 315px;
-  }
-}
 
 // ===================================button-additionally===============================
 .button-additionally:hover,
@@ -252,7 +218,7 @@
 @media screen and (min-width: 1024px) {
   .position-button-additionally {
     position: absolute;
-    right: 0;
+    right: 47px;
     bottom: 145px;
     margin-top: 0;
   }
@@ -260,6 +226,7 @@
 @media screen and (min-width: 1280px) {
     .position-button-additionally {
         bottom: 182px;
+        right: 85px;
     }
 }
 
