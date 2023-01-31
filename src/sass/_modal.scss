@@ -24,27 +24,36 @@
 .modal {
    
       /* Скрываем окна  */
-      opacity: 0;
+      opacity: 1;
       visibility: hidden;
       
       
       /*  Установаем ширину окна  */
-      width: 100%;
-      max-width: 500px;
-      
+      width: calc(100% - 18px);
+      max-height: 80vh;
+
+    // -  max-width: 500px;
+      height: auto;
+
       /*  Центрируем и задаем z-index */
       // position: fixed;
+      position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+    //  - transform: translate(-50%, -50%);
+      
       z-index: 30; /* Должен быть выше чем у подложки*/
+      transform: translate(-50%, -50%) scale(1);
+      
+      /* Скрол */
+      overflow: auto;
       
       /*  Побочные стили   */
       box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
-      text-align: center;
-      padding: 30px;
-      border-radius: 3px;
-      background-color: #fff;
+    //  - text-align: center;
+    //  - padding: 30px;
+      border-radius: 2px;
+      background: #FFFDEE;
       transition: 0.3s all;
    }
    
@@ -111,26 +120,26 @@
 // }
 
 .modal{
-    position: absolute;
-    left: 50%;
-    top: 50%;
+    //  + position: absolute;
+    // left: 50%;
+    // top: 50%;
   
-    width: calc(100% - 18px);
-    height: auto;
-    max-height: 80vh;
-    overflow: auto;
+    // + width: calc(100% - 18px);
+    // + height: auto;
+    // - max-height: 80vh;
+    // + overflow: auto;
   
     // background: #fcfcfc;
     // box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     //   0px 2px 1px rgba(0, 0, 0, 0.2);
     // border-radius: 4px;
   
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
+    // - opacity: 1;
+    //  + transform: translate(-50%, -50%) scale(1);
     transition: transform var(--animation), opacity var(--animation);
 
-    background: #FFFDEE;
-    border-radius: 2px;
+    // + background: #FFFDEE;
+    // + border-radius: 2px;
 
     // outline: 1px solid red;
 }

@@ -36,23 +36,23 @@
 
       <input
         class="feedback-input"
+        id="tel"
         type="tel"
         name="user_tel"
         placeholder="+38 (___) ___-__-__"
         required
         pattern="^+[0-9]"
       />
-      <label class="feedback-field" id="tel"><span>Номер телефону</span></label>
+      <label class="feedback-field" for="tel"><span>Номер телефону</span></label>
 
       <input
         class="feedback-input"
-        for="booked-date"
+        id="booked-date"
         type="date"
         name="booked_date"
-        placeholder="Сьогодні"
         required
       />
-      <label class="feedback-field" id="booked-date"
+      <label class="feedback-field" for="booked-date"
         ><span>На яку дату бронювати?</span></label
       >
 
@@ -71,14 +71,14 @@
     <form class="modal-room-reservation-form">
       <input
         class="feedback-input"
-        for="user-name"
+        id="user-name-client"
         type="text"
         name="user_name"
         placeholder="Ваше ім’я"
         required
       />
       <div class="label-wrapper">
-        <label class="feedback-field" id="user-name"
+        <label class="feedback-field" for="user-name-client"
           ><span class="feedback-field-txt"
             >На кого забронювати номер?</span
           ></label
@@ -87,7 +87,7 @@
 
       <input
         class="feedback-input"
-        for="user-tel"
+        id="user-tel"
         type="tel"
         name="user_tel"
         placeholder="+38 (___) ___-__-__"
@@ -95,46 +95,42 @@
         pattern="^+[0-9]"
       />
       <div class="label-wrapper">
-        <label class="feedback-field" id="user-tel"
+        <label class="feedback-field" for="user-tel"
           ><span>Номер телефону</span></label
         >
       </div>
 
-      <select class="feedback-input" id="type-room" name="type_room">
+      <!-- <select class="feedback-input" id="type-room" name="type_room">
         <option value="deluxe-double-room">Двомісний люкс</option>
         <option value="double-room">Двомісний</option>
         <option value="triple-room">Трьохмісний</option>
-      </select>
+      </select> -->
       <div class="label-wrapper">
-        <label class="feedback-field" for="type-room"
-          ><span>Категорія номеру</span></label
-        >
+        <p class="feedback-field">Категорія номеру</p>
       </div>
 
       <input
         class="feedback-input"
-        for="arrival-date"
+        id="arrival-date"
         type="date"
         name="arrival_date"
-        placeholder="Дата заїзду"
         required
       />
       <div class="label-wrapper">
-        <label class="feedback-field" id="arrival-date"
+        <label class="feedback-field" for="arrival-date"
           ><span>Дата заїзду</span></label
         >
       </div>
 
       <input
         class="feedback-input"
-        for="leaving-date"
+        id="leaving-date"
         type="date"
         name="leaving_date"
-        placeholder="Сьогодні"
         required
       />
       <div class="label-wrapper">
-        <label class="feedback-field" id="leaving-date"
+        <label class="feedback-field" for="leaving-date"
           ><span>Дата виїзду</span></label
         >
       </div>
