@@ -11,7 +11,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.65),
             rgba(0, 0, 0, 0.65)), url(../images/mobile/background/mob-bg-hp-2.jpeg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left top;
     background-size: cover;
 }
 
@@ -81,18 +81,12 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
 
     .homepage-restaurant-container > .container {
         padding-top: 48px;
-        padding-bottom: 96px;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-
-    .homepage-restaurant-container>.container {
-        padding-bottom: 94px;
+        padding-bottom: 40px;
     }
 }
 
 .homepage-restaurant-top {
+    width: 258px;
     margin-bottom: 20px;
 
 }
@@ -108,6 +102,13 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
 
     .homepage-restaurant-top {
         margin-left: 125px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .homepage-restaurant-top {
+        width: 610px;
     }
 }
 
@@ -136,16 +137,8 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
 }
 
 .homepage-restaurant-text.hp-restaurant {
-    width: 258px;
     margin-bottom: 0;
     color: #BABABA;
-}
-
-@media screen and (min-width: 1024px) {
-
-    .homepage-restaurant-text.hp-restaurant {
-        width: 610px;
-    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -190,6 +183,14 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
     margin-bottom: 32px;
 }
 
+@media screen and (min-width: 1024px) {
+
+    .slider-buttons.hp-restaurant {
+        margin-bottom: 0;
+    }
+
+}
+
 .slider-button {
     color: #FFFFFF;
 }
@@ -205,14 +206,6 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
 
 }
 
-@media screen and (min-width: 1024px) {
-
-    .homepage-restaurant-element:nth-child(n + 3) {
-        display: none;
-    }
-
-}
-
 .restaurant-holder {
     width: 274px;
     display: block;
@@ -222,8 +215,26 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
 }
 
 @media screen and (min-width: 1024px) {
+
     .restaurant-holder {
         width: 270px;
+    }
+
+    .restaurant-holder.second,
+    .restaurant-holder.third {
+        width: 162px;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    .restaurant-holder.second {
+        width: 270px;
+    }
+
+    .restaurant-holder.third {
+        width: 162px;
     }
 
 }
@@ -262,7 +273,7 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
 }
 
 .homepage-restaurant-link {
-    display: block;
+    display: inline-block;
     width: 236px;
     padding-top: 14px;
     padding-bottom: 14px;
