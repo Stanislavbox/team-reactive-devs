@@ -1,0 +1,33 @@
+.hero-wrapper__title {
+      animation: right-to-left 1s ease-in-out both;
+    }
+    @keyframes right-to-left {
+      0% {
+        opacity: 0;
+        transform: translateX(200px);
+      }
+      50% {
+        opacity: 0.6;
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    .hero-wrapper__undertitle,
+    .hero-wrapper__tagline {
+      animation: bottom-to-top 1s ease-in-out 1s both;
+    }
+    @keyframes bottom-to-top {
+      0% {
+        opacity: 0;
+        transform: translateY(100px);
+      }
+      50% {
+        opacity: 0.6;
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
