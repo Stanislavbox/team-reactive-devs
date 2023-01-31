@@ -111,7 +111,7 @@
   background: var(--main-black);
   border: 2px solid var(--background-main-color);
   border-radius: 25px;
-
+  box-shadow: 0 4px 4px var(--background-btn-dark-shadow);
   cursor: pointer;
 
   transition-property: background-color border-color;
