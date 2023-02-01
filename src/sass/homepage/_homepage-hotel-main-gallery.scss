@@ -7,6 +7,8 @@
     color: var(--main-white);
     text-align: center;
     margin-bottom: 12px;
+    text-indent: -0.3em;
+    direction: rtl;
 }
 .homepage-hotel-main-section-tittle{
 font-family: var(--text-font);
@@ -27,6 +29,9 @@ letter-spacing: 0.02em;
 color: #BABABA;
 margin-bottom: 48px;
 margin-left: 17px;
+// text-indent: -0.3em;
+padding-left: 10px;
+// direction: rtl;
 }
 .homepage-hotel-main-link{
     display: flex;
@@ -68,7 +73,7 @@ color: var(--accent-yellow);
 @media screen and (max-width:1023px){
     .homepage-hotel-main-slider-img.hb,
     .homepage-hotel-main-slider-img.hr{
-        display: none;
+        // display: none;                  замість слайдеру
     }
     .homepage-hotel-main{
         position: relative;
@@ -149,6 +154,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1024px){
         margin-left: 0;
         font-size: 16px;
         line-height: calc(20/16);
+        // padding-left: 18px;
     }
     .homepage-hotel-main-first{
         display: flex;
@@ -179,7 +185,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1024px){
     }
     .homepage-hotel-main-section .svg-list{
         justify-content: end;
-        margin-right: 312px;
+        margin-right: 270px;
         
     }
 }
@@ -206,4 +212,52 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px){
     .homepage-hotel-main-section{
         background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../images/desktop/background/desk-bg-hp-3@2x.jpeg);
     }
+}
+// /////////////////////////////////////////////////////////////////////////////
+.homepage-hotel-main .arrow{
+    fill: #FFFFFF;
+    transition: fill var(--animation);
+}
+.homepage-hotel-main .arrow:hover,
+.homepage-hotel-main .arrow:hover{
+    fill: #F3C653;
+}
+.homepage-hotel-main .button-wrapper{
+margin-top: 16px;
+margin-bottom: 32px;
+padding-left: 0;
+padding-right: 0;
+gap: 32px;
+}
+.homepage-hotel-main .slider-wrapper{
+display: flex;
+margin-top: 0;
+flex-direction: row-reverse;
+}
+@media screen and (max-width:1023px){
+.swiper-slide.y,
+.swiper-slide.x
+.homepage-hotel-main-slider,
+.svg-list.list,
+.homepage-hotel-main-icon{
+display: none;
+}
+.swiper-wrapper.hp{
+    width: 346px;
+    height: 270px;
+}
+}
+@media screen and (max-width:1023px){
+// .homepage-hotel-main-btn-wrapper{
+
+// }
+.homepage-hotel-main-second{
+    justify-content: space-between;
+}
+}
+// Tablet
+@media screen and (min-width: 1024px){
+.homepage-hotel-main-section .slider-wrapper{
+    display: none;
+}
 }
