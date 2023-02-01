@@ -178,31 +178,49 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
     }
 }
 
-.homepage-restaurant-slider > .slider-wrapper {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    column-gap: 20px;
-    margin-bottom: 16px;
+.homepage-restaurant-slider>.slider-wrapper {
+    width: 274px;
     margin-top: 0;
+    outline: none;
 }
 
 @media screen and (min-width: 1024px) {
-   
-    .homepage-restaurant-slider > .slider-wrapper {
-        column-gap: 34px;
-        margin-bottom: 0;
+
+    .homepage-restaurant-slider>.slider-wrapper {
+        width: 663px;
     }
 
 }
 
 @media screen and (min-width: 1280px) {
 
-    .homepage-restaurant-slider > .slider-wrapper {
-        column-gap: 87px;
+    .homepage-restaurant-slider>.slider-wrapper {
+        width: 874px;
     }
 
+}
+
+.homepage-restaurant-slider > .swiper-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 16px;
+    margin-top: 0;
+    outline: none;
+}
+
+@media screen and (min-width: 1024px) {
+   
+    .homepage-restaurant-slider > .swiper-wrapper {
+        margin-bottom: 0;
+    }
+
+}
+
+.homepage-restaurant-slider .swiper-slide {
+    outline: none;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 1023px) {
@@ -216,6 +234,32 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
 
     .homepage-restaurant-element.mob {
         display: none;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    
+    .homepage-restaurant-element {
+        width: 274px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+
+    .homepage-restaurant-element {
+        width: 270px;
+    }
+
+    .homepage-restaurant-element.tabl {
+        width: 162px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .homepage-restaurant-element.tabl.third {
+        width: 270px;
     }
 }
 
@@ -267,12 +311,6 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
 
 .slider-button.accent {
     color: #FFFFFF;
-}
-
-.slider-button:hover,
-.slider-button:focus, 
-.slider-button:active {
-    color: #F3C653;
 }
 
 
