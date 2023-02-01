@@ -1,5 +1,3 @@
-/*Mariia Yefymenko*/
-
 .homepage-about-restaurant {
     background-color: var(--background-main-color);
 }
@@ -256,7 +254,7 @@
 
     .slider-hp-about {
         position: absolute;
-        bottom: 50px;
+        bottom: 45px;
         right: 85px;
     }
 }
@@ -264,54 +262,40 @@
 .slider-hp-about > .slider-wrapper {
     display: flex;
     flex-wrap: nowrap;
-    column-gap: 25px;
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 20px;
     margin-top: 0;
+    outline: none;
+    width: 245px;
 }
 
 @media screen and (min-width: 1024px) {
 
     .slider-hp-about>.slider-wrapper {
-        column-gap: 40px;
         margin-bottom: 32px;
-    }
-}
-
-.homepage-restaurant-image {
-    background: #DADADA;
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-    overflow: hidden;
-    border-radius: 2px;
-}
-
-.homepage-restaurant-image {
-    display: block;
-}
-
-@media screen and (max-width: 1023px) {
-
-    .homepage-restaurant-image {
-        width: 245px;
-        height: 245px;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    
-    .homepage-restaurant-image {
-        width: 194px;
-        height: 194px;
+        width: 428px;
     }
 }
 
 @media screen and (min-width: 1280px) {
-    
-    .homepage-restaurant-image {
-        width: 254px;
-        height: 254px;
+
+    .slider-hp-about>.slider-wrapper {
+        margin-bottom: 32px;
+        width: 539px;
     }
+}
+
+.slider-hp-about  .swiper-slide {
+    outline: none;
+    overflow: hidden;
+}
+
+.homepage-restaurant-image {
+    display: block;
+    background: #DADADA;
+    overflow: hidden;
+    border-radius: 2px;
 }
 
 .slider-buttons.hp-about-restaurant {
