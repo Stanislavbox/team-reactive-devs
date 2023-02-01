@@ -1,5 +1,8 @@
 // ==========================Kharabara Roman===================================
 /* ======================section 2room-luxury============================ */
+.luxury-room_section {
+  background-color: var(--background-main-color);
+}
 .luxury-room {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -135,35 +138,6 @@
   }
 }
 
-// =================================temporary photo============================
-.temporary-photo_list {
-  display: flex;
-  margin-top: 32px;
-}
-
-@media screen and (min-width: 1024px) {
-  .temporary-photo_list {
-    margin-top: 176px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .temporary-photo_list {
-    margin-top: 188px;
-  }
-}
-
-.temporary-photo_first {
-  display: none;
-}
-
-@media screen and (min-width: 1024px) {
-  .temporary-photo_first {
-    display: block;
-    margin-right: 40px;
-  }
-}
-
 // ====================================arrow button========================================
 
 
@@ -190,7 +164,7 @@
   padding: 14px 64px;
   margin-bottom: 16px;
 
-  transition: 400ms;
+  transition: var(--animation);
 }
 
 .pading-button {
@@ -235,6 +209,7 @@
   margin-top: 32px;
   position: relative;
   left: -15px;
+  outline: none;
 }
 @media screen and (min-width: 1024px) {
   .margin-slider {
@@ -274,4 +249,7 @@
   .reset-pading-arrow {
     padding-right: 0;
   }
+}
+.otline {
+  outline: none;
 }
