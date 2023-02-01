@@ -114,12 +114,12 @@
 
   &__title {
     @media screen and (max-width: 371px) {
-      font-size: 86px;
+      font-size: 80px;
     }
 
     font-family: var(--logo-font);
     font-weight: 700;
-    font-size: 96px;
+    font-size: 80px;
     line-height: calc(103 / 96);
     letter-spacing: 0.3em;
     text-transform: uppercase;
