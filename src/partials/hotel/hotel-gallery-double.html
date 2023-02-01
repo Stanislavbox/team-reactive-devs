@@ -51,7 +51,156 @@
     </picture>
 
     <!-- slider -->
-    
+
+    <div class="slider-wrapper margin-slider top">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide otline">
+            <picture class="homepage-restaurant-image">
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/desktop/slider/hotel/desk-sl-hotel-1.jpeg    1x,
+                  ./images/desktop/slider/hotel/desk-sl-hotel-1@2x.jpeg 2x
+                "
+                type="image/jpeg"
+              />
+              <source
+                media="(min-width: 1024px)"
+                srcset="
+                  ./images/tablet/slider/hotel/tabl-sl-hotel-1.jpeg    1x,
+                  ./images/tablet/slider/hotel/tabl-sl-hotel-1@2x.jpeg 2x
+                "
+                type="image/jpeg"
+              />
+              <source
+                media="(max-width: 1023px)"
+                srcset="
+                  ./images/mobile/slider/hotel/mob-sl-hotel-1.jpeg    1x,
+                  ./images/mobile/slider/hotel/mob-sl-hotel-1@2x.jpeg 2x
+                "
+                type="image/jpeg"
+              />
+              <img
+                class="homepage-restaurant-img"
+                src="./images/mobile/slider/hotel/mob-sl-hotel-1.jpeg"
+                alt="room"
+                loading="lazy"
+                width="326"
+                height="287"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide otline">
+            <picture class="homepage-restaurant-image">
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/desktop/slider/hotel/desk-sl-hotel-2.jpeg    1x,
+                  ./images/desktop/slider/hotel/desk-sl-hotel-2@2x.jpeg 2x
+                "
+                type="image/jpeg"
+              />
+              <source
+                media="(min-width: 1024px)"
+                srcset="
+                  ./images/tablet/slider/hotel/tabl-sl-hotel-2.jpeg    1x,
+                  ./images/tablet/slider/hotel/tabl-sl-hotel-2@2x.jpeg 2x
+                "
+                type="image/jpeg"
+              />
+              <source
+                media="(max-width: 1023px)"
+                srcset="
+                  ./images/mobile/slider/hotel/mob-sl-hotel-2.jpeg    1x,
+                  ./images/mobile/slider/hotel/mob-sl-hotel-2@2x.jpeg 2x
+                "
+                type="image/jpeg"
+              />
+              <img
+                class="homepage-restaurant-img"
+                src="./images/mobile/slider/hotel/mob-sl-hotel-2.jpeg"
+                alt="Restaurant terrace"
+                loading="lazy"
+                width="326"
+                height="287"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide otline">
+            <picture class="homepage-restaurant-image">
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/desktop/slider/hotel/desk-sl-hotel-3.jpeg    1x,
+                  ./images/desktop/slider/hotel/desk-sl-hotel-3@2x.jpeg 2x
+                "
+                type="image/jpeg"
+              />
+              <source
+                media="(min-width: 1024px)"
+                srcset="
+                  ./images/tablet/slider/hotel/tabl-sl-hotel-3.jpeg    1x,
+                  ./images/tablet/slider/hotel/tabl-sl-hotel-3@2x.jpeg 2x
+                "
+                type="image/jpeg"
+              />
+              <source
+                media="(max-width: 1023px)"
+                srcset="
+                  ./images/mobile/slider/hotel/mob-sl-hotel-3.jpeg    1x,
+                  ./images/mobile/slider/hotel/mob-sl-hotel-3@2x.jpeg 2x
+                "
+                type="image/jpeg"
+              />
+              <img
+                class="homepage-restaurant-img"
+                src="./images/mobile/slider/hotel/mob-sl-hotel-3.jpeg "
+                alt="Dinner"
+                loading="lazy"
+                width="326"
+                height="287"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide otline">
+            <picture class="homepage-restaurant-image">
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/desktop/slider/hotel/desk-sl-hotel-4.jpeg    1x,
+                  ./images/desktop/slider/hotel/desk-sl-hotel-4@2x.jpeg 2x
+                "
+                type="image/jpeg"
+              />
+              <source
+                media="(min-width: 1024px)"
+                srcset="
+                  ./images/tablet/slider/hotel/tabl-sl-hotel-4.jpeg    1x,
+                  ./images/tablet/slider/hotel/tabl-sl-hotel-4@2x.jpeg 2x
+                "
+                type="image/jpeg"
+              />
+              <source
+                media="(max-width: 1023px)"
+                srcset="
+                  ./images/mobile/slider/hotel/mob-sl-hotel-4.jpeg    1x,
+                  ./images/mobile/slider/hotel/mob-sl-hotel-4@2x.jpeg 2x
+                "
+                type="image/jpeg"
+              />
+              <img
+                class="homepage-restaurant-img"
+                src="./images/mobile/slider/hotel/mob-sl-hotel-4.jpeg "
+                alt="Restaurant terrace"
+                loading="lazy"
+                width="326"
+                height="287"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
 
       <div class="button-wrapper margin-button-slider reset-pading-arrow">
         <div class="swiper-button-prev margin-arrow">
@@ -67,14 +216,13 @@
         </div>
       </div>
     </div>
-
-    <!-- buttons -->
-    <div class="hotel-room-two-btn-list">
-      <a class="hotel-room-two-btn-link link" href="/src/room.html"
-        >Детальніше</a
+    <div class="position-button-additionally position-slider-double">
+      <a class="button-additionally link" href="./room.html">Детальніше</a>
+      <button
+        class="button-additionally pading-button js-open-modal"
+        data-modal="Переглянути ціни"
+        type="button"
       >
-
-      <button class="hotel-room-two-btn js-open-modal" data-modal="Переглянути ціни" type="button">
         Переглянути ціни
       </button>
     </div>
