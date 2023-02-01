@@ -8,6 +8,7 @@
     </button>
     <p class="modal-main-text">ЗАБРОНЮВАТИ СТОЛИК</p>
     <form class="modal-booked-table-form">
+      <div class="table-wrapper">
       <input
         class="feedback-input"
         id="user-name"
@@ -55,9 +56,10 @@
       <label class="feedback-field" for="booked-date"
         ><span>На яку дату бронювати?</span></label
       >
-
-      <button class="madal-main-btn" type="submit">ОФОРМИТИ БРОНЮВАННЯ</button>
-    </form>
+      </div>
+        <button class="madal-main-btn" type="submit">ОФОРМИТИ БРОНЮВАННЯ</button>
+    </form>  
+      
   </div>
   
 
@@ -135,7 +137,6 @@
           ><span>Дата виїзду</span></label
         >
       </div>
-
       <button class="madal-main-btn" type="submit">
         <span class="modal-btn-wrapper">ОФОРМИТИ БРОНЮВАННЯ</span>
       </button>
@@ -154,8 +155,7 @@
     <form>
       
       <p class="modal-form-text">Категорія номеру</p>
-      <span class="price-wrapper">
-        <span class="for-column">
+      <div class="price-wrapper">
       <input
         class="feedback-input"
         type="number"
@@ -168,8 +168,6 @@
       <div class="label-wrapper">
         <label class="feedback-field"><span>Кількість ночей</span></label>
       </div>
-      </span>
-      <span class="for-column">
       <input
         class="feedback-input"
         id="total-price"
@@ -180,12 +178,15 @@
       <div class="label-wrapper">
         <label class="feedback-field" for="total-price"><span>грн</span></label>
       </div>
-      </span>
-      </form>
-    </span>
-      <button class="madal-main-btn btn-wrapper" type="submit">
+      </div>
+      <span class="box-btn-center">
+        <button class="madal-main-btn btn-wrapper" type="submit">
         <span class="modal-btn-wrapper">ЗАБРОНЮВАТИ НОМЕР</span>
       </button>
+      </span>
+      
+      </form>
+    
     
   </div>
 </div>

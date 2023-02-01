@@ -56,7 +56,7 @@
       /*  Центрируем и задаем z-index */
       // position: fixed;
       position: fixed;
-      top: 50%;
+      top: 55%;
       left: 50%;
     //  - transform: translate(-50%, -50%);
       
@@ -79,13 +79,6 @@
    
    
    /* Стили для активных классов подложки и окна */
-@media screen and (min-width: 712px){
-    .modal {
-        width: 712px;
-        height: 522px;
-    }
-
-} 
 
 .modal.active,
 .overlay.active{
@@ -261,28 +254,53 @@
         width: auto;
     }
 }
+.modal-booked-table .feedback-input{
+    width: 384px;
+    height: 54px;
+}
 
 // забронювати столик tablet
 
+
 @media screen and (min-width:1024px){
     .modal-booked-table{
-    // width: 712px;
-    // height: 522px;
+    width: 712px;
+    height: 522px;
+    padding: 60px;
+    // align-items: center;
     // display: flex;
     // flex-direction: row;
     }
-    .modal-booked-table-form{
-        display: flex;
-        flex-direction: row;
-        // flex-direction: column;  на 2 колонки 
-        flex-wrap: wrap;
-        justify-content: space-between;
-        // max-width: 288px;
+    .table-wrapper{
+        column-count: 2;
+        display: block;
     }
-    // .modal-booked-table-form .feedback-field{
-    //     flex-basis: calc((100% - 16px - 30px)/2);
+    .modal-booked-table .feedback-input{
+        width: 288px;
+        height: 64px;
+    }
+    // .modal-booked-table .feedback-input{
+    //     margin-bottom: 8px;
+    }
+    // .modal-booked-table .feedback-input{
+    //     margin-bottom: 28px;
     // }
-}
+    // .modal-booked-table-form{
+    //     column-count: 2;
+    //     display: block;
+    // }
+
+
+    // .modal-booked-table .feedback-input{
+    //     width: 384px;
+    //     height: 54px;
+    // }
+
+    .modal-booked-table .madal-main-btn{
+        margin-top: 40px;
+    }
+    
+
 // @media screen and (min-width:1024px){
 //     .modal-booked-table{
 //     width: 712px;
@@ -332,9 +350,9 @@
     width: 414px;
     height: 572px;
     padding-top: 60px;
-    display: flex;
-    flex-direction: column;
-    // align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // // align-items: center;
 }
 
 .modal-room-price .modal-main-text{
@@ -394,12 +412,10 @@ margin-top: 0;
         height: 489px;
         padding-left: 60px;
         padding-right: 60px;
-        display: flex;
     }
+
     .price-wrapper{
-        // display: block;
-        display: flex;
-        // width: 592px;
+        column-count: 2;
     }
     
     .modal-room-price form{
@@ -407,7 +423,6 @@ margin-top: 0;
         padding-right: 0px;
     }
     .modal-room-price .feedback-input{
-        // width: 100%;
         width: 288px;
         height: 64px;
     }
@@ -418,6 +433,14 @@ margin-top: 0;
         margin-left: auto;
         margin-right: auto;
         padding: 0px;
+
+        width: 592px;
+        height: 64px;
+    }
+
+    .box-btn-center{
+        display: flex;
+        justify-content: center;
     }
 
 }
