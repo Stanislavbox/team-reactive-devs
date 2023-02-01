@@ -174,29 +174,6 @@
   }
 }
 
-// slider
-// .hotel-room-two-slider-list {
-//     display: none;
-// }
-
-// .hotel-room-two-slider-img {
-//     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-// }
-
-// // tablet
-// @media screen and (min-width: 1024px) {
-//     .hotel-room-two-slider-list {
-//         // margin-top: 174px;
-//         display: flex;
-//     }
-
-//     .hotel-room-two-slider-li:not(:last-child) {
-//         margin-right: 40px;
-//     }
-// }
-
-// desktop
-
 // buttons
 .hotel-room-two-btn-list {
   margin: 0 auto;
@@ -220,6 +197,8 @@
   border-radius: 25px;
   border: 2px solid #fffdee;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  transition: var(--animation);
 }
 
 .hotel-room-two-btn:hover,
@@ -250,6 +229,8 @@
   border-radius: 25px;
   border: 2px solid #fffdee;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  transition: var(--animation);
 }
 
 .hotel-room-two-btn-link:hover,
