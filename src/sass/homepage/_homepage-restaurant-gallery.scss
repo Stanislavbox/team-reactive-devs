@@ -4,14 +4,14 @@
     background-color: var(--background-main-color);
 }
 
-.homepage-about-restaurant > .container {
+.homepage-about-restaurant>.container {
     padding-top: 16px;
     padding-bottom: 20px;
 }
 
 @media screen and (min-width: 1024px) {
 
-    .homepage-about-restaurant > .container {
+    .homepage-about-restaurant>.container {
         position: relative;
         padding-top: 120px;
         padding-bottom: 262px;
@@ -20,7 +20,7 @@
 
 @media screen and (min-width: 1280px) {
 
-    .homepage-about-restaurant > .container {
+    .homepage-about-restaurant>.container {
         padding-bottom: 225px;
     }
 }
@@ -108,6 +108,14 @@
     flex-direction: column;
     align-items: flex-start;
     row-gap: 32px;
+    margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .homepage-restaurant-wrapper {
+        margin-bottom: 0;
+    }
 }
 
 .homepage-restaurant-hall {
@@ -230,10 +238,10 @@
     .homepage-restaurant-text.hp-figcaption {
         width: 312px;
     }
-} 
+}
 
-.slider-hp-about  {
-   align-self: flex-start;
+.slider-hp-about {
+    overflow: hidden;
 }
 
 @media screen and (min-width: 414px) {
@@ -262,57 +270,24 @@
 }
 
 .slider-hp-about > .slider-wrapper {
-    display: flex;
-    flex-wrap: nowrap;
-    column-gap: 25px;
-    justify-content: flex-start;
-    align-items: center;
     margin-bottom: 20px;
     margin-top: 0;
 }
 
 @media screen and (min-width: 1024px) {
 
-    .slider-hp-about>.slider-wrapper {
-        column-gap: 40px;
+    .slider-hp-about > .slider-wrapper {
         margin-bottom: 32px;
     }
 }
 
 .homepage-restaurant-image {
+    display: block;
     background: #DADADA;
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     overflow: hidden;
     border-radius: 2px;
 }
 
-.homepage-restaurant-image {
-    display: block;
-}
-
-@media screen and (max-width: 1023px) {
-
-    .homepage-restaurant-image {
-        width: 245px;
-        height: 245px;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    
-    .homepage-restaurant-image {
-        width: 194px;
-        height: 194px;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    
-    .homepage-restaurant-image {
-        width: 254px;
-        height: 254px;
-    }
-}
 
 .slider-buttons.hp-about-restaurant {
     display: flex;

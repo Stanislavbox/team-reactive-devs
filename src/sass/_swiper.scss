@@ -1,11 +1,14 @@
 .slider-wrapper{
-      outline: 1px solid red;
-      margin-top: 50px;
       height: auto;
 
-      width: 340px;
       display: flex;
       flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 415px) {
+      .slider-wrapper{
+        max-width: 330px;
+      }
     }
 
     @media screen and (min-width: 1024px) {
@@ -40,7 +43,6 @@
       width: 245px;
 
 
-      outline: 1px solid green;
     }
 
     @media screen and (min-width: 1024px) {

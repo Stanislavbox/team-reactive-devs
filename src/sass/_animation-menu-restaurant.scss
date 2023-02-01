@@ -1,0 +1,15 @@
+.restaurant-section-title,
+.title-room,
+.hotel-room-two-title,
+.hotel-gallery-triple-title {
+  opacity: 0;
+  transform: translateY(100%);
+}
+.restaurant-section-title.element-show,
+.title-room.element-show.element-show,
+.hotel-room-two-title.element-show,
+.hotel-gallery-triple-title.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+}
