@@ -171,6 +171,13 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
     
 }
 
+@media screen and (max-width: 1023px) {
+
+    .homepage-restaurant-slider .slider-wrapper {
+        margin-bottom: 16px;
+    }
+}
+
 @media screen and (min-width: 1024px) {
 
     .homepage-restaurant-slider {
