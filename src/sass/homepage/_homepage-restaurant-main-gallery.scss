@@ -168,6 +168,7 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
 .homepage-restaurant-slider {
     position: relative;
     margin-bottom: 32px;
+    
 }
 
 @media screen and (min-width: 1024px) {
@@ -176,28 +177,6 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
          flex-grow: 1;
          margin-bottom: 0;
     }
-}
-
-.homepage-restaurant-slider>.slider-wrapper {
-    width: 274px;
-    margin-top: 0;
-    outline: none;
-}
-
-@media screen and (min-width: 1024px) {
-
-    .homepage-restaurant-slider>.slider-wrapper {
-        width: 663px;
-    }
-
-}
-
-@media screen and (min-width: 1280px) {
-
-    .homepage-restaurant-slider>.slider-wrapper {
-        width: 874px;
-    }
-
 }
 
 .homepage-restaurant-slider > .swiper-wrapper {
