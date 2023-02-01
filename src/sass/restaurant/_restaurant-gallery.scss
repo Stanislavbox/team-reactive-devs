@@ -6,7 +6,13 @@
 .restaurant-container {
   position: relative;
   padding-top: 16px;
-  padding-bottom: 32px; //  ДО СЛАЙДЕРА
+  
+}
+
+@media screen and (max-width:415px) {
+  .restaurant-container {
+      padding-bottom: 20px; 
+    }
   
 }
 
@@ -58,6 +64,7 @@
 
 .meat-ph-and-description {
   display: flex;
+  margin-bottom: 32px;
 }
 
 .about-restaurant-gallery.accent-text-rest {
@@ -87,7 +94,7 @@
 @media screen and (min-width: 1024px) {
   .restaurant-container {
     padding-top: 120px;
-    padding-bottom: 262px; //  ДО СЛАЙДЕРА
+    padding-bottom: 262px; 
   }
 
   .restaurant-gallery-subtitle {
@@ -122,6 +129,7 @@
 
   .meat-ph-and-description {
     margin-top: 142px;
+    margin-bottom: 0;
   }
 
   .about-restaurant-gallery.accent-text-rest {
@@ -133,9 +141,10 @@
 // DESKTOP
 
 @media screen and (min-width: 1280px) {
+
   .restaurant-container {
-    padding-bottom: 207px; //  ДО СЛАЙДЕРА
-  }
+      padding-bottom: 207px;
+    }
 
   .about-restaurant-gallery {
     width: 518px;
@@ -155,4 +164,59 @@
       margin-left: 32px;
       margin-top: 195px
 }
+}
+
+
+/////////////////////////// SLIDER/////////////////////////////
+
+@media screen and (max-width:415) {
+  .slider-wrapper.slider-container-restaurant {
+    margin-right: -15px;
+  }
+}
+
+.slider-wrapper.slider-container-restaurant {
+  outline: none;
+  margin-top: 0;
+
+}
+
+.swiper-slide.restaurant-page {
+  overflow: hidden;
+  outline: none;
+
+}
+
+
+
+
+
+.button-wrapper.restaurant-page {
+  padding-right: 0;
+  margin-top: 20px;
+  width: 126px;
+  gap: 32px;
+}
+
+@media screen and (min-width:1024px) {
+  .button-wrapper.restaurant-page {
+    margin-top: 32px;
+  }
+    .slider-wrapper.slider-container-restaurant {
+      position: absolute;
+      top: 948px;
+      right: 60px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+  .button-wrapper.restaurant-page {
+    margin-top: 40px;
+  }
+    .slider-wrapper.slider-container-restaurant {
+      top: 899px;
+      right: 85px;
+    }
+
+
 }
