@@ -239,17 +239,107 @@
     color: #000000;
 }
 
+
+// забронювати столик моб
+.modal-booked-table{
+    width: 414px;
+    height: 668px;
+    padding-top: 60px;
+    // position: absolute;
+    // left: 50%;
+    // top: 50%;
+    // transform: translate(-50%, -50%);
+}
+.modal-booked-table .modal-main-text{
+    padding-top: 0;
+}
+@media screen and (max-width:413px){
+    .modal-booked-table{
+        width:calc(100% - 20px);
+    }
+    .modal-booked-table .madal-main-btn{
+        width: auto;
+    }
+}
+
+// забронювати столик tablet
+
+@media screen and (min-width:1024px){
+    .modal-booked-table{
+    // width: 712px;
+    // height: 522px;
+    // display: flex;
+    // flex-direction: row;
+    }
+    .modal-booked-table-form{
+        display: flex;
+        flex-direction: row;
+        // flex-direction: column;  на 2 колонки 
+        flex-wrap: wrap;
+        justify-content: space-between;
+        // max-width: 288px;
+    }
+    // .modal-booked-table-form .feedback-field{
+    //     flex-basis: calc((100% - 16px - 30px)/2);
+    // }
+}
+// @media screen and (min-width:1024px){
+//     .modal-booked-table{
+//     width: 712px;
+//     height: 522px;
+//     padding: 60px;
+//     }
+// }
+
+// 
 // // ===== Modal___ЗАБРОНЮВАТИ НОМЕР =====
 // // .modal-room-reservation{}
-
+.modal-room-reservation{
+    width: 414px;
+    height: 780px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (max-width:413px){
+    .modal-room-reservation{
+        width:calc(100% - 20px);
+    }
+    .modal-room-reservation .madal-main-btn{
+        width: auto;
+    }
+    .modal-room-reservation .madal-main-btn{
+        width: auto;
+        height: auto;
+    }
+}
 .label-wrapper {
     margin-top: 8px;
     margin-bottom: 20px;
 }
+// @media screen and (min-width:1024px){
+//     .modal-room-reservation{
+//     width: 712px;
+//     height: 638px;
+//     padding: 60px;
+//     }
+// }
 
 // // ===== Modal___Ціна =====
 // // .modal-room-price{}
 
+.modal-room-price{
+    width: 414px;
+    height: 572px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+}
+
+.modal-room-price .modal-main-text{
+    padding: 0;
+}
 .modal-type-text{
     font-family: 'Times New Roman';
     font-style: normal;
@@ -263,6 +353,10 @@
     margin-top: 40px;
     margin-bottom: 28px;
     margin-left: 15px;
+}
+.modal-room-price .left{ 
+margin-top: 0;
+// текст вліво////////////////////
 }
 
 .modal-form-text{
@@ -278,11 +372,68 @@
     margin-bottom: 20px;
 }
 
+@media screen and (max-width:413px){
+    .modal-room-price{
+        width:calc(100% - 20px);
+    }
+    .modal-room-price .madal-main-btn{
+        width: auto;
+    }
+}
+@media screen and (max-width:1023px){
+    .modal-room-price .madal-main-btn{
+        margin-top: 0;
+    }
+    .price-wrapper{
+        margin-bottom: 40px;
+    }
+}
+@media screen and (min-width:1024px){
+    .modal-room-price{
+        width: 712px;
+        height: 489px;
+        padding-left: 60px;
+        padding-right: 60px;
+        display: flex;
+    }
+    .price-wrapper{
+        // display: block;
+        display: flex;
+        // width: 592px;
+    }
+    
+    .modal-room-price form{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .modal-room-price .feedback-input{
+        // width: 100%;
+        width: 288px;
+        height: 64px;
+    }
+    .modal-room-price .feedback-input:first-child{
+        margin-right: 16px;
+    }
+    .btn-wrapper{
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
+    }
+
+}
+.modal-room-price .madal-main-btn{
+    height: 64px;
+}
+//     .modal-room-price:not(:nth-child(3)){
+//         justify-content: center;
+//     }
+// }
+
 // Стилізація значку календар
 
 // ::-webkit-calendar-picker-indicator {
 //     color: transparent;
 //     opacity: 1;
 //     background: url(//www.gravatar.com/avatar/cbfaff96665b7567defe1b34a883db8b?s=16&d=identicon&r=PG) no-repeat center;
-//     background-size: contain;
-//   }
+//     background-size: contain;}
+//
