@@ -74,6 +74,9 @@
       background: #FFFDEE;
       transition: 0.3s all;
 
+      padding-top: 60px;
+      padding-right: 15px;
+      padding-left: 15px;
       padding-bottom: 60px;
    }
    
@@ -124,10 +127,15 @@
     height: 100%;
 }
 
-.modal > form{
-    padding-right: 6px;
-    padding-left: 6px;
+.icon-close:hover,
+.icon-close:focus {
+    stroke: brown;
 }
+
+// .modal > form{
+//     padding-right: 6px;
+//     padding-left: 6px;
+// }
 
 // // ===== Modal___ЗАБРОНЮВАТИ СТОЛИК =====
 // // .modal-booked-table{}
@@ -143,7 +151,7 @@
     color: #000000;
 
     
-    padding-top: 60px;
+    // padding-top: 60px;
     margin-bottom: 40px;
 }
 
@@ -233,16 +241,17 @@
 }
 
 
-// забронювати столик моб
-.modal-booked-table{
-    width: 414px;
-    height: 668px;
-    padding-top: 60px;
-    // position: absolute;
-    // left: 50%;
-    // top: 50%;
-    // transform: translate(-50%, -50%);
-}
+// ЗАБРОНЮВАТИ СТОЛИК --- MOBILE
+
+// .table-form-txt{
+//     display: inline-block;
+//     margin-top: 8px;
+//     margin-bottom: 20px;
+// }
+// .feedback-input:hover{
+//     background: #F3C653;
+    
+// }
 .modal-booked-table .modal-main-text{
     padding-top: 0;
 }
@@ -253,11 +262,28 @@
     .modal-booked-table .madal-main-btn{
         width: auto;
     }
+    .modal-booked-table .feedback-input{
+        width: 100%;
+    }
 }
-.modal-booked-table .feedback-input{
-    width: 384px;
-    height: 54px;
+
+
+.table-form-txt{
+        display: inline-block;
+        margin-top: 8px;
+        margin-bottom: 20px;
+    }
+
+
+@media screen and (min-width:432px){
+    .modal-booked-table{
+        width: 414px;
+    }
 }
+// .modal-booked-table .feedback-input{
+//     width: 384px;
+//     height: 54px;
+// }
 
 // забронювати столик tablet
 
@@ -279,9 +305,32 @@
         width: 288px;
         height: 64px;
     }
-    // .modal-booked-table .feedback-input{
-    //     margin-bottom: 8px;
+    .modal-booked-table .feedback-field {
+        // display: block;
+        // margin-bottom: 8px;
+        // margin-bottom: 28px;
+        
     }
+    .modal-booked-table .table-form-txt{
+        margin-bottom: 28;
+    }
+
+    .madal-main-btn {
+        width: 592px;
+    }
+    .modal-booked-table .madal-main-btn{
+        margin-top: 12px;
+    }
+}
+//     .modal-booked-table .feedback-field:nth-child(3),
+//     .modal-booked-table .feedback-field:nth-child(4){
+//         margin-bottom: 0px;
+//     }
+// }
+
+    // .modal-booked-table .feedback-input{
+    //     
+
     // .modal-booked-table .feedback-input{
     //     margin-bottom: 28px;
     // }
@@ -296,9 +345,9 @@
     //     height: 54px;
     // }
 
-    .modal-booked-table .madal-main-btn{
-        margin-top: 40px;
-    }
+    // ---- .modal-booked-table .madal-main-btn{
+    //     margin-top: 40px;
+    // }
     
 
 // @media screen and (min-width:1024px){
@@ -310,18 +359,21 @@
 // }
 
 // 
-// // ===== Modal___ЗАБРОНЮВАТИ НОМЕР =====
-// // .modal-room-reservation{}
+// ===== Modal___ЗАБРОНЮВАТИ НОМЕР =====
+
 .modal-room-reservation{
-    width: 414px;
+    width: calc(100% - 18px);
     height: 780px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.modal-room-reservation .madal-main-btn{
+    height: 64px;
+}
 @media screen and (max-width:413px){
     .modal-room-reservation{
-        width:calc(100% - 20px);
+        width: calc(100% - 18px);
     }
     .modal-room-reservation .madal-main-btn{
         width: auto;
@@ -330,34 +382,93 @@
         width: auto;
         height: auto;
     }
+    .modal-room-price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+}
+
+@media screen and (min-width:432px){
+    .modal-room-reservation{
+        width: 414px;
+    }
 }
 .label-wrapper {
     margin-top: 8px;
     margin-bottom: 20px;
 }
-// @media screen and (min-width:1024px){
-//     .modal-room-reservation{
-//     width: 712px;
-//     height: 638px;
-//     padding: 60px;
-//     }
-// }
+
+
+@media screen and (min-width:1024px){
+    .modal-room-reservation{
+        // position: relative;
+    width: 712px;
+    height: 638px;
+    }
+
+    .modal-form-position{
+        display: flex;
+        justify-content: space-between;
+        // flex-direction: column;
+        // column-count: 2;
+        // justify-content: start;
+        gap: 16px;
+
+    }
+    .modal-room-reservation-form{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+    }
+    // .modal-room-reservation > .label-wrapper{
+    //     margin-bottom: 0px;
+    // }
+    .input-flex-one{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-group{
+        width: 288px;
+    }
+
+    .select-box{
+        flex-wrap: wrap;
+        display: flex;
+        width: 288px;
+        // justify-content: flex-end;
+        // align-self: end;
+    }
+
+    // .select-box{}
+        
+    // .modal-form-position > .feedback-input{
+    //     column-count: 2;
+    // }
+   
+
+
+}
+
+
+// ===== /Modal___ЗАБРОНЮВАТИ НОМЕР =====
+
+
 
 // // ===== Modal___Ціна =====
-// // .modal-room-price{}
 
 .modal-room-price{
-    width: 414px;
+    // width: 414px;
     height: 572px;
     padding-top: 60px;
-    // display: flex;
-    // flex-direction: column;
-    // // align-items: center;
+    
 }
 
-.modal-room-price .modal-main-text{
-    padding: 0;
-}
+// .modal-room-price .modal-main-text{
+//     padding: 0;
+// }
 .modal-type-text{
     font-family: 'Times New Roman';
     font-style: normal;
@@ -368,14 +479,13 @@
 
     color: #808080;
 
-    margin-top: 40px;
+    // margin-top: 40px;
     margin-bottom: 28px;
-    margin-left: 15px;
 }
-.modal-room-price .left{ 
-margin-top: 0;
+// .modal-room-price .left{ 
+// margin-top: 0;}
 // текст вліво////////////////////
-}
+
 
 .modal-form-text{
     font-family: 'Montserrat';
@@ -389,13 +499,21 @@ margin-top: 0;
     margin-left: 0px;
     margin-bottom: 20px;
 }
-
+.box-btn-center{
+    display: flex;
+    justify-content: center;
+}
 @media screen and (max-width:413px){
     .modal-room-price{
-        width:calc(100% - 20px);
+        width:calc(100% - 18px);
     }
     .modal-room-price .madal-main-btn{
         width: auto;
+    }
+}
+@media screen and (min-width:432px){
+    .modal-room-price{
+        width: 414px;
     }
 }
 @media screen and (max-width:1023px){
@@ -413,7 +531,12 @@ margin-top: 0;
         padding-left: 60px;
         padding-right: 60px;
     }
-
+    .modal-main-text{
+        font-size: 40px;
+    }
+    .modal-type-text{
+        margin-left: 0px;
+    }
     .price-wrapper{
         column-count: 2;
     }
@@ -441,6 +564,10 @@ margin-top: 0;
     .box-btn-center{
         display: flex;
         justify-content: center;
+    }
+
+    .madal-main-btn{
+        font-size: 24px;
     }
 
 }
