@@ -27,7 +27,6 @@ font-size: 12px;
 line-height: calc(15/12);
 letter-spacing: 0.02em;
 color: #BABABA;
-margin-bottom: 48px;
 margin-left: 17px;
 // text-indent: -0.3em;
 padding-left: 10px;
@@ -71,10 +70,7 @@ color: var(--accent-yellow);
     justify-content: flex-start;
 }
 @media screen and (max-width:1023px){
-    .homepage-hotel-main-slider-img.hb,
-    .homepage-hotel-main-slider-img.hr{
-        // display: none;                  замість слайдеру
-    }
+    
     .homepage-hotel-main{
         position: relative;
     }
@@ -214,3 +210,12 @@ screen and (min-resolution: 2dppx) and (min-width: 1280px){
     }
 }
 // ////////////////////////////////////////////////////////////////////////////
+// ====================================Roma=================================
+.homepage-hotel-main-first {
+    margin-bottom: 48px;
+}
+@media screen and (min-width:1024px) {
+    .homepage-hotel-main-first {
+            margin-bottom: 40px;
+        }
+}
