@@ -10,22 +10,13 @@
 
   margin-left: auto;
   margin-right: auto;
-  max-width: 414px;
-
-  @media screen and (min-width: 1024px) {
-    max-width: 1024px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    max-width: 1280px;
-  }
 
   &__main {
     //   MOBILE
     background-image: linear-gradient(
         to right,
-        rgba(0, 0, 0, 0.76),
-        rgba(0, 0, 0, 0.76)
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
       ),
       url(../images/mobile/background/mob-bg-hp-1.jpeg);
 
@@ -34,8 +25,8 @@
       (min-resolution: 2dppx) {
       background-image: linear-gradient(
           to right,
-          rgba(0, 0, 0, 0.76),
-          rgba(0, 0, 0, 0.76)
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
         ),
         url(../images/mobile/background/mob-bg-hp-1@2x.jpeg);
     }
@@ -44,8 +35,8 @@
     @media screen and (min-width: 1024px) {
       background-image: linear-gradient(
           to right,
-          rgba(0, 0, 0, 0.76),
-          rgba(0, 0, 0, 0.76)
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
         ),
         url(../images/tablet/background/tabl-bg-hp-1.jpeg);
 
@@ -54,8 +45,8 @@
         (min-resolution: 2dppx) {
         background-image: linear-gradient(
             to right,
-            rgba(0, 0, 0, 0.76),
-            rgba(0, 0, 0, 0.76)
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
           ),
           url(../images/tablet/background/tabl-bg-hp-1@2x.jpeg);
       }
@@ -65,8 +56,8 @@
     @media screen and (min-width: 1280px) {
       background-image: linear-gradient(
           to right,
-          rgba(0, 0, 0, 0.76),
-          rgba(0, 0, 0, 0.76)
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
         ),
         url(../images/desktop/background/desk-bg-hp-1.jpeg);
 
@@ -75,8 +66,8 @@
         (min-resolution: 2dppx) {
         background-image: linear-gradient(
             to right,
-            rgba(0, 0, 0, 0.76),
-            rgba(0, 0, 0, 0.76)
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
           ),
           url(../images/desktop/background/desk-bg-hp-1@2x.jpeg);
       }
@@ -222,8 +213,7 @@
   font-size: 16px;
   line-height: calc(20 / 16);
   letter-spacing: 0.02em;
-  transition: border var(--animation),
-  background-color var(--animation);
+  transition: border var(--animation), background-color var(--animation);
 
   color: var(--accent-yellow);
   &:hover,
@@ -269,32 +259,45 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 
   padding: 8px 16px 8px 8px;
 
+  box-sizing: border-box;
   border: 1px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
   background-color: transparent;
 
-  &__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    box-sizing: border-box;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.01em;
+  color: var(--accent-yellow);
 
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(20 / 16);
-    letter-spacing: 0.01em;
-    color: var(--secondary-white);
+  transition: color var(--animation), border var(--animation),
+    background-color var(--animation), box-shadow var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--main-hover-color);
+    border: 1px solid var(--main-hover-color);
+    background-color: var(--hover-background-color);
+    box-shadow: var(--main-hover-shadow);
+
+    & .hero-map__address {
+      color: var(--main-white);
+    }
   }
 
   &__icon {
     width: 24px;
     height: 24px;
 
-    fill: var(--accent-yellow);
+    fill: currentColor;
+  }
+
+  &__address {
+    color: var(--secondary-white);
   }
 }
 

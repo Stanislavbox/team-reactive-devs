@@ -13,23 +13,29 @@
 
   font-family: var(--text-font);
   &__container {
-    height: 143px;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
+
     padding-top: 16px;
     padding-bottom: 31px;
     row-gap: 9px;
+
     @media screen and (min-width: 1024px) {
       flex-wrap: nowrap;
       padding-top: 30px;
-      padding-bottom: 30px;
+      padding-bottom: 45px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding-bottom: 77px;
     }
   }
 
   &__logo {
     @media screen and (max-width: 371px) {
-      display: none;
+      text-align: center;
     }
 
     font-family: var(--logo-font);
@@ -40,6 +46,12 @@
     letter-spacing: 0.3em;
     text-transform: uppercase;
     color: var(--main-white);
+
+    transition: text-shadow var(--animation);
+
+    &:hover {
+      text-shadow: 0px 0px 20px var(--main-white);
+    }
 
     @media screen and (min-width: 1024px) {
       font-size: 40px;
@@ -54,14 +66,18 @@
   align-content: center;
 
   margin-left: auto;
+
   gap: 20px;
+  @media screen and (max-width: 371px) {
+    margin-right: auto;
+  }
 
   @media screen and (min-width: 1024px) {
     gap: 72px;
   }
 
   @media screen and (min-width: 1280px) {
-    margin-right: 136px;
+    margin-right: 140px;
   }
 
   &--list {
@@ -83,7 +99,15 @@
     line-height: calc(20 / 16);
     letter-spacing: 0.02em;
 
-    color: inherit;
+    color: var(--accent-yellow);
+
+    transition: color var(--animation), text-shadow var(--animation);
+
+    &:hover,
+    &:focus {
+      color: var(--main-hover-color);
+      text-shadow: var(--main-hover-shadow);
+    }
 
     @media screen and (min-width: 1024px) {
       font-size: 20px;
@@ -99,18 +123,35 @@
     justify-content: center;
     gap: 8px;
 
+    color: var(--accent-yellow);
+
     @media screen and (min-width: 1024px) {
       padding: 8px;
       box-sizing: border-box;
       border: 1px solid rgba(243, 198, 83, 0.7);
       border-radius: 2px;
+
+      transition: color var(--animation), box-shadow var(--animation),
+        border var(--animation), background-color var(--animation);
+
+      &:hover,
+      &:focus {
+        color: var(--main-hover-color);
+        box-shadow: var(--main-hover-shadow);
+        border: 1px solid var(--main-hover-color);
+        background-color: var(--hover-background-color);
+
+        & .header-contacts__number {
+          text-shadow: 0px 0px 20px var(--main-white);
+        }
+      }
     }
   }
   &__icons {
     width: 24px;
     height: 24px;
 
-    fill: var(--accent-yellow);
+    fill: currentColor;
   }
 
   &__number {
@@ -122,6 +163,8 @@
 
     letter-spacing: 0.02em;
     color: var(--main-white);
+
+    transition: text-shadow var(--animation);
 
     @media screen and (min-width: 1024px) {
       display: flex;
@@ -149,13 +192,17 @@
   line-height: 15px;
   letter-spacing: 0.01em;
 
-  color: var(--secondary-white);
+  color: var(--accent-yellow);
+
+  @media screen and (max-width: 371px) {
+    margin-right: auto;
+  }
 
   &--icon {
     width: 20;
     height: 20;
 
-    fill: var(--accent-yellow);
+    fill: currentColor;
   }
 
   &--address {
@@ -188,9 +235,24 @@
     box-sizing: border-box;
     width: 24px;
     height: 24px;
+
+    border-radius: 50%;
+
+    color: var(--accent-yellow);
+    background-color: transparent;
+
+    transition: color var(--animation), box-shadow var(--animation),
+      background-color var(--animation);
+
+    &:hover,
+    &:focus {
+      color: var(--main-hover-color);
+      box-shadow: var(--main-hover-shadow);
+      background-color: var(--hover-background-color);
+    }
   }
 
   &__icons {
-    fill: var(--accent-yellow);
+    fill: currentColor;
   }
 }
