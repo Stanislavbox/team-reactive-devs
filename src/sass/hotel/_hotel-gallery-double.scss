@@ -145,7 +145,6 @@
 // img-room
 .hotel-room-two-img {
   margin-left: auto;
-  margin-bottom: 20px;
 
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
@@ -177,7 +176,7 @@
 // buttons
 .hotel-room-two-btn-list {
   margin: 0 auto;
-
+  margin-top: 20px;
   text-align: center;
 }
 
@@ -213,7 +212,6 @@
 
 .hotel-room-two-btn-link {
   display: inline-block;
-  margin-top: 20px;
   margin-bottom: 16px;
   padding-top: 14px;
   padding-bottom: 14px;
@@ -271,8 +269,14 @@
 
 // =======================================Slider Roma====================================
 .top {
-  margin-top: 0;
+  margin-top: 32px;
 }
+@media screen and (min-width: 1024px) {
+  .top {
+      margin-top: 0;
+    }
+}
+
 @media screen and (min-width: 1024px) {
   .position-slider-double {
     bottom: 200px;

@@ -300,3 +300,14 @@
     padding: 0;
     margin-top: 0;
 }
+// ===========================================ROMA==========================================
+.position-slider-restaurant {
+    position: relative;
+    right: -15px;
+}
+@media screen and (min-width: 1024px) {
+    .position-slider-restaurant {
+            position: static;
+            right: 0;
+        }
+}
