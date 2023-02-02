@@ -80,7 +80,7 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
 @media screen and (min-width: 414px) {
 
     .homepage-restaurant-container > .container {
-        padding-left: 40px;
+        padding-left: 47px;
     }
 }
 
@@ -89,6 +89,14 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
     .homepage-restaurant-container > .container {
         padding-top: 48px;
         padding-bottom: 96px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .homepage-restaurant-container>.container {
+        padding-left: 85px;
+        
     }
 }
 
