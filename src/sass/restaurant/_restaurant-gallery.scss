@@ -204,6 +204,13 @@
   gap: 32px;
 }
 
+@media screen and (max-width:415px) {
+  .button-wrapper.restaurant-page {
+    padding-right: 15px;
+  }
+
+}
+
 @media screen and (min-width:1024px) {
   .button-wrapper.restaurant-page {
     margin-top: 32px;
