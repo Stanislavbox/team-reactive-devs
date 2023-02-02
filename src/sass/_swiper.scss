@@ -1,32 +1,33 @@
 .slider-wrapper{
-      height: auto;
+  height: auto;
 
-      display: flex;
-      flex-wrap: wrap;
-    }
+  display: flex;
+  flex-wrap: wrap;
+}
 
-    @media screen and (max-width: 415px) {
-      .slider-wrapper{
-        max-width: 330px;
-      }
-    }
+@media screen and (max-width: 415px) {
+  .slider-wrapper{
+    max-width: 330px;
+  }
+}
 
-    @media screen and (min-width: 1024px) {
-      .slider-wrapper{
-        width: 450px;
-      }
-    }
-    @media screen and (min-width: 1280px) {
-      .slider-wrapper{
-        width: 550px;
-      }
-    }
+@media screen and (min-width: 1024px) {
+  .slider-wrapper{
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .slider-wrapper{
+    width: 550px;
+  }
+}
 
 // позиционирует слайдер справа (доп. класс)
-    .slider-right{
-      justify-content: end;
-      margin-left: auto;
-    }
+.slider-right{
+  justify-content: end;
+  margin-left: auto;
+}
 
 
 
@@ -35,82 +36,121 @@
       height: 254px;
     } */
 
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: transparent;
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
 
-      width: 245px;
+  width: 245px;
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper-slide{
+    width: 194px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .swiper-slide{
+    width: 254px;
+  }
+}
 
 
-    }
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-    @media screen and (min-width: 1024px) {
-      .swiper-slide{
-        width: 194px;
-      }
-    }
-    @media screen and (min-width: 1280px) {
-      .swiper-slide{
-        width: 254px;
-      }
-    }
+.button-wrapper{
+  display: flex;
+  justify-content: space-between;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 20px;
+  width: 126px;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+  position: static;
+  fill: #000;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after{
+  display: none;
+}
+
+.arrow{
+  fill: #000;
+  width: 32px;
+  height: 32px;
+
+  transition: fill var(--animation);
+}
+
+.arrow:hover{
+  fill: #F3C653;
+}
 
 
-      /* Center slide text vertically */
-      // display: -webkit-box;
-      // display: -ms-flexbox;
-      // display: -webkit-flex;
-      // display: flex;
-      // -webkit-box-pack: center;
-      // -ms-flex-pack: center;
-      // -webkit-justify-content: center;
-      // justify-content: center;
-      // -webkit-box-align: center;
-      // -ms-flex-align: center;
-      // -webkit-align-items: center;
-      // align-items: center;
-    // }
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+    // Слайдер ресторан main
 
-    .button-wrapper{
-      display: flex;
-      justify-content: space-between;
+.hp-restaurant-slider{
+  margin: 0 auto;
+  max-width: 920px;
+  overflow: hidden;
+}
 
-      padding-left: 15px;
-      padding-right: 15px;
-      margin-top: 20px;
-      width: 126px;
-    }
+.swiper-wrapper{
 
-    .swiper-button-next,
-    .swiper-button-prev{
-      position: static;
-      fill: #000;
-      width: 32px;
-      height: 32px;
-      margin: 0;
-    }
+}
 
-    .swiper-button-next:after,
-    .swiper-button-prev:after{
-      display: none;
-    }
+.hp-res-card{
+  min-height: 270px;
+  width: auto;
+  /* max-width: 270px; */
 
-    .arrow{
-      fill: #000;
-      width: 32px;
-      height: 32px;
+  background: #dadada;
+  border-radius: 2px;
+}
 
-      transition: fill var(--animation);
-    }
+.button-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 48px;
+}
+.swiper-button-prev{
+  margin-right: 32px;
+}
+.swiper-button-prev,
+.swiper-button-next{
+  position: static;
+  width: 32px;
+  height: 32px;
+  margin-top: 0;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after{
+  display: none;
+}
 
-    .arrow:hover{
-      fill: #F3C653;
-    }
+.arrow{
+  fill: #000;
+  width: 32px;
+  height: 32px;
+
+  transition: fill var(--animation);
+}
+
+.arrow:hover{
+  fill: #F3C653;
+}
