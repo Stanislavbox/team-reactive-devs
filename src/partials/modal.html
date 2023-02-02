@@ -9,18 +9,17 @@
     <p class="modal-main-text">ЗАБРОНЮВАТИ СТОЛИК</p>
     <form class="modal-booked-table-form">
       <div class="table-wrapper">
-      <input
+        <input
         class="feedback-input"
         id="user-name"
         type="text"
         name="user_name"
         placeholder="Ваше ім’я"
         required
-      />
-      <label class="feedback-field" for="user-name"
-        ><span>На кого забронювати столик?</span></label
-      >
+        />
 
+        <label class="feedback-field" for="user-name">
+          <span class="table-form-txt">На кого забронювати столик?</span></label>
       <input
         class="feedback-input"
         id="amount-guests"
@@ -32,7 +31,7 @@
         required
       />
       <label class="feedback-field" for="amount-guests"
-        ><span>Столик на яку кількість осіб?</span></label
+        ><span class="table-form-txt">Столик на яку кількість осіб?</span></label
       >
 
       <input
@@ -44,7 +43,9 @@
         required
         pattern="^+[0-9]"
       />
-      <label class="feedback-field" for="tel"><span>Номер телефону</span></label>
+      <label class="feedback-field" for="tel">
+        <span class="table-form-txt">Номер телефону</span>
+      </label>
 
       <input
         class="feedback-input"
@@ -54,12 +55,13 @@
         required
       />
       <label class="feedback-field" for="booked-date"
-        ><span>На яку дату бронювати?</span></label
+        ><span class="table-form-txt">На яку дату бронювати?</span></label
       >
       </div>
+      <span class="box-btn-center">
         <button class="madal-main-btn" type="submit">ОФОРМИТИ БРОНЮВАННЯ</button>
-    </form>  
-      
+      </span>
+    </form>     
   </div>
   
 
@@ -72,8 +74,11 @@
     </button>
     <p class="modal-main-text">ЗАБРОНЮВАТИ НОМЕР</p>
     <form class="modal-room-reservation-form">
-      <input
-        class="feedback-input"
+     <span class="modal-form-position">
+
+      <span class="input-flex-one">
+        <input
+        class="feedback-input input-group"
         id="user-name-client"
         type="text"
         name="user_name"
@@ -87,9 +92,11 @@
           ></label
         >
       </div>
+      </span>
 
-      <input
-        class="feedback-input"
+      <span class="input-flex-one">
+        <input
+        class="feedback-input input-group"
         id="user-tel"
         type="tel"
         name="user_tel"
@@ -102,8 +109,13 @@
           ><span>Номер телефону</span></label
         >
       </div>
+      </span>
+      
 
-      <select class="feedback-input select" id="type-room" name="type_room">
+      </span>
+
+      <span class="select-box">
+      <select class="feedback-input select input-group " id="type-room" name="type_room">
         <option value="deluxe-double-room" class="select">Двомісний люкс</option>
         <option value="double-room" class="select">Двомісний</option>
         <option value="triple-room" class="select">Трьохмісний</option>
@@ -111,9 +123,11 @@
       <div class="label-wrapper">
         <p class="feedback-field">Категорія номеру</p>
       </div>
-
-      <input
-        class="feedback-input"
+      </span>
+      <span class="modal-form-position">
+        <span class="input-flex-one">
+          <input
+        class="feedback-input input-group"
         id="arrival-date"
         type="date"
         name="arrival_date"
@@ -124,9 +138,11 @@
           ><span>Дата заїзду</span></label
         >
       </div>
-
-      <input
-        class="feedback-input"
+        </span>
+        
+      <span class="input-flex-one">
+        <input
+        class="feedback-input input-group"
         id="leaving-date"
         type="date"
         name="leaving_date"
@@ -137,9 +153,15 @@
           ><span>Дата виїзду</span></label
         >
       </div>
-      <button class="madal-main-btn" type="submit">
-        <span class="modal-btn-wrapper">ОФОРМИТИ БРОНЮВАННЯ</span>
-      </button>
+      </span>
+      
+      </span>
+      
+      <span class="box-btn-center">
+        <button class="madal-main-btn" type="submit">
+          <span class="modal-btn-wrapper">ОФОРМИТИ БРОНЮВАННЯ</span>
+        </button>
+      </span>
     </form>
   </div>
 
@@ -151,7 +173,7 @@
       </svg>
     </button>
     <p class="modal-main-text">ЦІНИ НА НОМЕР</p>
-    <p class="modal-type-text left">Двомісний люкс</p>
+    <p class="modal-type-text">Двомісний люкс</p>
     <form>
       
       <p class="modal-form-text">Категорія номеру</p>
@@ -184,9 +206,5 @@
         <span class="modal-btn-wrapper">ЗАБРОНЮВАТИ НОМЕР</span>
       </button>
       </span>
-      
-      </form>
-    
-    
+    </form>
   </div>
-</div>
