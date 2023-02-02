@@ -169,10 +169,16 @@
 
 /////////////////////////// SLIDER/////////////////////////////
 
-@media screen and (max-width:415) {
+
   .slider-wrapper.slider-container-restaurant {
+    position: relative;
     margin-right: -15px;
   }
+@media screen and (min-width: 1024px) {
+  .slider-wrapper.slider-container-restaurant {
+      position: static;
+      margin-right: 0;
+    }
 }
 
 .slider-wrapper.slider-container-restaurant {
