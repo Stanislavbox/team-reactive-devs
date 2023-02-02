@@ -4,8 +4,8 @@
     //   MOBILE
     background-image: linear-gradient(
         to right,
-        rgba(0, 0, 0, 0.76),
-        rgba(0, 0, 0, 0.76)
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
       ),
       url(../images/mobile/background/mob-bg-rest.jpeg);
 
@@ -14,8 +14,8 @@
       (min-resolution: 2dppx) {
       background-image: linear-gradient(
           to right,
-          rgba(0, 0, 0, 0.76),
-          rgba(0, 0, 0, 0.76)
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
         ),
         url(../images/mobile/background/mob-bg-rest@2x.jpeg);
     }
@@ -24,8 +24,8 @@
     @media screen and (min-width: 1024px) {
       background-image: linear-gradient(
           to right,
-          rgba(0, 0, 0, 0.76),
-          rgba(0, 0, 0, 0.76)
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
         ),
         url(../images/tablet/background/tabl-bg-rest.jpeg);
 
@@ -34,8 +34,8 @@
         (min-resolution: 2dppx) {
         background-image: linear-gradient(
             to right,
-            rgba(0, 0, 0, 0.76),
-            rgba(0, 0, 0, 0.76)
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
           ),
           url(../images/tablet/background/tabl-bg-rest@2x.jpeg);
       }
@@ -45,8 +45,8 @@
     @media screen and (min-width: 1280px) {
       background-image: linear-gradient(
           to right,
-          rgba(0, 0, 0, 0.76),
-          rgba(0, 0, 0, 0.76)
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
         ),
         url(../images/desktop/background/desk-bg-rest.jpeg);
 
@@ -55,8 +55,8 @@
         (min-resolution: 2dppx) {
         background-image: linear-gradient(
             to right,
-            rgba(0, 0, 0, 0.76),
-            rgba(0, 0, 0, 0.76)
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
           ),
           url(../images/desktop/background/desk-bg-rest@2x.jpeg);
       }
