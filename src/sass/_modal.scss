@@ -1,38 +1,24 @@
-
-// .overlay {
-   
-//       opacity: 0;
-//       visibility: hidden;
-//       overflow: auto;
-      
-//       top: 0;
-//       left: 0;
-//       width: 100%;
-//       height: 100%;
-//       background: rgb(255, 253, 238,0.5);
-//       backdrop-filter: blur(2px);
-//       z-index: 20;
-//       transition: var(--animation);
-//       transition: opacity var(--animation),
-//       visibility var(--animation);}
-
-    
+ 
 .overlay {
-        opacity: 1;
-        visibility: hidden;
-        overflow: auto;
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: rgb(255, 253, 238,0.5);
-        backdrop-filter: blur(2px);
-        z-index: 20;
-        width: 100%;
-        height: 100%;
+    opacity: 1;
+    visibility: hidden;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(255, 253, 238,0.5);
+    backdrop-filter: blur(2px);
+    z-index: 20;
+    width: 100%;
+    height: 100%;
 
-  background: rgba(46, 47, 66, 0.4);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background: rgba(46, 47, 66, 0.4);
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//   transition: opacity 500ms cubic-bezier(0, 0, 0.65, 1.32),
+//     visibility 250ms cubic-bezier(0, 0, 0.65, 1.32);
 } 
 
 
@@ -42,7 +28,7 @@
 .modal {
    
       /* Скрываем окна  */
-      opacity: 1;
+      opacity: 0;
       visibility: hidden;
       
       
@@ -72,13 +58,17 @@
     //  - padding: 30px;
       border-radius: 2px;
       background: #FFFDEE;
-      transition: 0.3s all;
 
       padding-top: 60px;
       padding-right: 15px;
       padding-left: 15px;
       padding-bottom: 60px;
-   }
+
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      
+   
+}
    
    
    /* Стили для активных классов подложки и окна */
@@ -89,18 +79,6 @@
       visibility: visible;
 }
    
-   
-   /* Стили для кнопки закрытия */
-   
-// .modal__cross {
-//       width: 15px;
-//       height: 15px;
-//       position: absolute;
-//       top: 20px;
-//       right: 20px;
-//       fill: #444;
-//       cursor: pointer;
-// }
    
 .modal-close-btn {
     position: absolute;
@@ -118,19 +96,45 @@
     background: transparent;
     border: none;
 
-    transition: background-color var(--animation)
+    // transition: background-color var(--animation)
   }
 
 .icon-close{
     stroke: #000000;
     width: 100%;
     height: 100%;
+    background-color: transparent;
+    border-radius: 50%;
 }
 
 .icon-close:hover,
 .icon-close:focus {
     stroke: brown;
+    // background-color: transparent;
+    // box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    // - transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.modal-close-btn{
+    background-color: transparent;
+}
+   
+
+.modal-close-btn:hover,
+.modal-close-btn:focus{
+    width: 28px;
+    height: 28px;
+    background-color: transparent;
+    border-radius: 50%;
+    // box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.35);
+    box-shadow: 2px 2px 50px 10px rgba(122, 94, 25, 0.55);
+     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+
+
 
 // .modal > form{
 //     padding-right: 6px;
@@ -166,12 +170,8 @@
     width: 100%;
     height: 54px;
 
-    background-color: transparent;
-    border: 1px solid #C79002;
-    border-radius: 2px;
-}
+    padding-left: 12px;
 
-.feedback-input::placeholder {
     font-family: 'Times New Roman';
     font-style: normal;
     font-weight: 700;
@@ -181,8 +181,33 @@
 
     color: #808080;
 
-    padding-left: 12px;
+    background-color: transparent;
+    border: 1px solid #C79002;
+    border-radius: 2px;
+
+     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.feedback-input:hover,
+.feedback-input:focus,
+.feedback-input:active{
+    border: 1px solid #F3C653;
+    border-radius: 2px;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+// .feedback-input::placeholder {
+//     // font-family: 'Times New Roman';
+//     // font-style: normal;
+//     // font-weight: 700;
+//     // font-size: 20px;
+//     // line-height: 23px;
+//     // letter-spacing: 0.05em;
+//     // color: #808080;
+
+//     // padding-left: 12px;
+// }
 
 .select{
     font-family: 'Times New Roman';
@@ -231,6 +256,10 @@
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+     color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+    
 }
 .madal-main-btn:focus,
 .madal-main-btn:hover{
@@ -238,6 +267,9 @@
     border: 1px solid #F3C653;
     border-radius: 2px;
     color: #000000;
+
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -434,7 +466,10 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+    }
 
+    .modal-room-reservation-form .feedback-input {
+        height: 64px;
     }
     // .modal-room-reservation > .label-wrapper{
     //     margin-bottom: 0px;
