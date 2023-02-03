@@ -206,20 +206,23 @@
 
   box-sizing: border-box;
   background: rgba(0, 0, 0, 0.4);
-  border: 2px solid #ffffff;
+  border: 2px solid var(--main-white);
   border-radius: 25px;
 
   font-weight: 700;
   font-size: 16px;
   line-height: calc(20 / 16);
   letter-spacing: 0.02em;
-  transition: border var(--animation), background-color var(--animation);
+  transition: color var(--animation), border var(--animation),
+    background-color var(--animation), box-shadow var(--animation);
 
   color: var(--accent-yellow);
   &:hover,
   &:focus {
-    background-color: var(--main-white);
-    border: 2px solid var(--accent-yellow);
+    color: var(--main-hover-color);
+    border: 2px solid var(--main-hover-color);
+    background-color: var(--hover-background-color);
+    box-shadow: var(--main-hover-shadow);
   }
 
   @media screen and (max-width: 1023px) {
