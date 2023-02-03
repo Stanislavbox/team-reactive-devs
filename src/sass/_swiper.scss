@@ -104,53 +104,53 @@
 
     // Слайдер ресторан main
 
-.hp-restaurant-slider{
-  margin: 0 auto;
-  max-width: 920px;
-  overflow: hidden;
-}
+// .hp-restaurant-slider{
+//   margin: 0 auto;
+//   max-width: 920px;
+//   overflow: hidden;
+// }
 
-.swiper-wrapper{
+// .swiper-wrapper{
 
-}
+// }
 
-.hp-res-card{
-  min-height: 270px;
-  width: auto;
-  /* max-width: 270px; */
+// .hp-res-card{
+//   min-height: 270px;
+//   width: auto;
+//   /* max-width: 270px; */
 
-  background: #dadada;
-  border-radius: 2px;
-}
+//   background: #dadada;
+//   border-radius: 2px;
+// }
 
-.button-wrapper{
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 48px;
-}
-.swiper-button-prev{
-  margin-right: 32px;
-}
-.swiper-button-prev,
-.swiper-button-next{
-  position: static;
-  width: 32px;
-  height: 32px;
-  margin-top: 0;
-}
-.swiper-button-prev::after,
-.swiper-button-next::after{
-  display: none;
-}
+// .button-wrapper{
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin-top: 48px;
+// }
+// .swiper-button-prev{
+//   margin-right: 32px;
+// }
+// .swiper-button-prev,
+// .swiper-button-next{
+//   position: static;
+//   width: 32px;
+//   height: 32px;
+//   margin-top: 0;
+// }
+// .swiper-button-prev::after,
+// .swiper-button-next::after{
+//   display: none;
+// }
 
-.arrow{
-  fill: #000;
+.hp-restaurant-slider .arrow{
+  fill: #fff;
   width: 32px;
   height: 32px;
 
   transition: fill var(--animation);
 }
 
-.arrow:hover{
+.hp-restaurant-slider .arrow:hover{
   fill: #F3C653;
 }
