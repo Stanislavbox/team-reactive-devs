@@ -17,9 +17,13 @@
   --footer-color: #0e0c07;
   --background-color-for-pictures: #dadada;
   --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  --main-hover-color: #feee53; // (hover text color)
-  --main-hover-shadow: 0px 0px 20px #e8f124; // (hover shadow)
+  // --main-hover-color: #feee53; // (hover text color)
+  // --main-hover-shadow: 0px 0px 20px #e8f124; // (hover shadow)
+
+  --main-hover-color: #F3C653;
+  --main-hover-shadow: 0px 0px 20px #F3C653;
+  --hover-background-color: #4c4f1045;
 
   // (hover background color for icons and buttons)
-  --hover-background-color: rgba(241, 248, 98, 0.27);
+  // --hover-background-color: rgba(241, 248, 98, 0.27);
 }
