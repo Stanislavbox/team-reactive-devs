@@ -15,11 +15,11 @@ var swiper = new Swiper('.hp-restaurant-slider', {
     },
     1024: {
       spaceBetween: 34,
-      slidesPerView: 3,
+      slidesPerView: 2,
     },
     1280: {
       spaceBetween: 87,
-      slidesPerView: 3,
+      slidesPerView: 2,
     },
   },
 });
